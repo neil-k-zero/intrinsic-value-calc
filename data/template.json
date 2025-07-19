@@ -5,17 +5,28 @@
   "sector": "Sector Name",
   "exchange": "NYSE/NASDAQ",
   "lastUpdated": "YYYY-MM-DD",
+  "currency": "USD",
+  "currencyNote": "Financial data currency and any conversion notes if applicable",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Exchange rate information if non-USD currency"
+  },
   
   "marketData": {
     "currentPrice": 0.00,
+    "currentPriceCurrency": "USD",
     "marketCap": 0,
+    "marketCapCurrency": "USD",
     "enterpriseValue": 0,
     "sharesOutstanding": 0,
     "beta": 1.0,
     "52WeekLow": 0.00,
     "52WeekHigh": 0.00,
     "priceTarget": 0.00,
-    "analystRating": "Hold"
+    "analystRating": "Hold",
+    "dataAsOf": "YYYY-MM-DD",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
   },
 
   "riskFactors": {
@@ -28,6 +39,28 @@
   },
 
   "financialHistory": {
+    "TTM": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0,
+      "period": "Trailing Twelve Months as of YYYY-MM-DD",
+      "reportingDate": "YYYY-MM-DD",
+      "currency": "USD"
+    },
     "2024": {
       "revenue": 0,
       "grossProfit": 0,
@@ -45,7 +78,8 @@
       "dividend": 0.00,
       "workingCapital": 0,
       "totalEquity": 0,
-      "retainedEarnings": 0
+      "retainedEarnings": 0,
+      "currency": "USD"
     },
     "2023": {
       "revenue": 0,
@@ -64,7 +98,8 @@
       "dividend": 0.00,
       "workingCapital": 0,
       "totalEquity": 0,
-      "retainedEarnings": 0
+      "retainedEarnings": 0,
+      "currency": "USD"
     },
     "2022": {
       "revenue": 0,
@@ -83,7 +118,8 @@
       "dividend": 0.00,
       "workingCapital": 0,
       "totalEquity": 0,
-      "retainedEarnings": 0
+      "retainedEarnings": 0,
+      "currency": "USD"
     },
     "2021": {
       "revenue": 0,
@@ -102,7 +138,8 @@
       "dividend": 0.00,
       "workingCapital": 0,
       "totalEquity": 0,
-      "retainedEarnings": 0
+      "retainedEarnings": 0,
+      "currency": "USD"
     },
     "2020": {
       "revenue": 0,
@@ -121,7 +158,8 @@
       "dividend": 0.00,
       "workingCapital": 0,
       "totalEquity": 0,
-      "retainedEarnings": 0
+      "retainedEarnings": 0,
+      "currency": "USD"
     }
   },
 
@@ -159,7 +197,8 @@
       "assetTurnover": 0.00,
       "inventoryTurnover": 0.00,
       "receivablesTurnover": 0.00
-    }
+    },
+    "dataNote": "Ratios based on TTM data as of YYYY-MM-DD"
   },
 
   "growthMetrics": {
@@ -168,6 +207,132 @@
     "fcfGrowth5Y": 0.00,
     "dividendGrowth5Y": 0.00,
     "dividendGrowthStreak": 0
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 0.00,
+    "currentAnnualDividendUSD": 0.00,
+    "currentDividendYield": 0.00,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.00,
+    "dividendGrowthRate": 0.00,
+    "consecutiveYearsOfGrowth": 0,
+    "buybackYield": 0.00,
+    "shareholderYield": 0.00,
+    "nextExDividendDate": "YYYY-MM-DD",
+    "nextPaymentDate": "YYYY-MM-DD",
+    "dividendPolicy": "Company dividend policy description",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividend currency information and conversion notes if applicable",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q3", 
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "YYYY-MM-DD", 
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.00,
+        "annualTotalUSD": 0.00
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD", 
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "YYYY-MM-DD",
+            "payDate": "YYYY-MM-DD",
+            "amount": 0.00,
+            "amountUSD": 0.00,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.00,
+        "annualTotalUSD": 0.00
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.00,
+      "growthRate3Y": 0.00,
+      "growthRate5Y": 0.00,
+      "growthRate10Y": 0.00,
+      "compoundAnnualGrowthRate": 0.00,
+      "averageAnnualIncrease": 0.00,
+      "consecutiveIncreases": 0,
+      "lastCut": "Never/Date of last cut",
+      "sustainabilityScore": "High/Medium/Low"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 0.00,
+      "freeCashFlowCoverage": 0.00,
+      "debtServiceCoverage": 0.00,
+      "dividendToFcfRatio": 0.00,
+      "retentionRatio": 0.00,
+      "sustainableDividendGrowth": 0.00,
+      "impliedGrowthRate": 0.00
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.00,
+      "industryAveragePayoutRatio": 0.00,
+      "industryAverageGrowthRate": 0.00,
+      "relativeYieldRanking": "Above/Below/Average",
+      "relativeGrowthRanking": "Above/Below/Average",
+      "reliabilityRanking": "Excellent/Good/Fair/Poor"
+    }
   },
 
   "industryBenchmarks": {
@@ -186,6 +351,53 @@
     "taxRate": 0.25,
     "reinvestmentRate": 0.35,
     "dividendGrowthRate": 0.05,
-    "perpetualGrowthRate": 0.025
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.30,
+      "minimumPayoutRatio": 0.25,
+      "maximumPayoutRatio": 0.35,
+      "expectedDividendGrowth": 0.05,
+      "conservativeDividendGrowth": 0.03,
+      "optimisticDividendGrowth": 0.08,
+      "sustainabilityThreshold": 0.60,
+      "cyclicalAdjustment": true,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Secondary to dividend",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "Currency-specific dividend assumptions and hedging information"
+    }
+  },
+
+  "businessSegments": {
+    "segment1": {
+      "revenue": 0,
+      "operatingIncome": 0,
+      "description": "Description of business segment",
+      "growthRate": 0.00,
+      "marketPosition": "Market position description"
+    }
+  },
+
+  "geographicRevenue": {
+    "region1": {
+      "revenue": 0,
+      "percentage": 0.00,
+      "growthRate": 0.00,
+      "description": "Geographic region description"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Market leadership description",
+    "keyProducts": ["Product 1", "Product 2"],
+    "competitiveAdvantages": [
+      "Competitive advantage 1",
+      "Competitive advantage 2"
+    ],
+    "risks": [
+      "Business risk 1",
+      "Business risk 2"
+    ]
   }
 }
