@@ -5,16 +5,79 @@ class ValuationCalculator {
   constructor(companyData) {
     this.data = companyData;
     this.currentYear = new Date().getFullYear();
+    
+    // Handle currency conversion if needed
+    this.normalizedData = this.convertToUSD(companyData);
+  }
+
+  // Currency conversion helper
+  convertToUSD(data) {
+    // If data is already in USD, return as-is
+    if (!data.currency || data.currency === 'USD') {
+      return data;
+    }
+
+    // Make a deep copy to avoid modifying original data
+    const normalizedData = JSON.parse(JSON.stringify(data));
+    
+    if (data.currency === 'DKK' && data.exchangeRate) {
+      const conversionRate = data.exchangeRate.dkkToUsd;
+      
+      // Convert financial history data from DKK to USD
+      Object.keys(normalizedData.financialHistory).forEach(year => {
+        const yearData = normalizedData.financialHistory[year];
+        
+        // Convert monetary values (but not ratios, percentages, or share counts)
+        const monetaryFields = [
+          'revenue', 'grossProfit', 'operatingIncome', 'netIncome', 
+          'freeCashFlow', 'operatingCashFlow', 'capex', 'totalAssets', 
+          'totalDebt', 'cashAndEquivalents', 'shareholdersEquity',
+          'workingCapital', 'totalEquity', 'retainedEarnings'
+        ];
+        
+        monetaryFields.forEach(field => {
+          if (yearData[field] !== undefined && yearData[field] !== null) {
+            yearData[field] = yearData[field] * conversionRate;
+          }
+        });
+        
+        // Convert per-share values
+        if (yearData.bookValuePerShare) {
+          yearData.bookValuePerShare = yearData.bookValuePerShare * conversionRate;
+        }
+        if (yearData.eps) {
+          yearData.eps = yearData.eps * conversionRate;
+        }
+        if (yearData.dividend) {
+          yearData.dividend = yearData.dividend * conversionRate;
+        }
+      });
+      
+      // Convert dividend info to USD
+      if (normalizedData.dividendInfo) {
+        if (normalizedData.dividendInfo.currentAnnualDividend) {
+          normalizedData.dividendInfo.currentAnnualDividend = 
+            normalizedData.dividendInfo.currentAnnualDividend * conversionRate;
+        }
+      }
+      
+      // Mark as converted to USD
+      normalizedData.currency = 'USD';
+      normalizedData.convertedFromCurrency = data.currency;
+      normalizedData.conversionRate = conversionRate;
+    }
+    
+    return normalizedData;
   }
 
   // Discounted Cash Flow to Equity (FCFE) Model
   calculateFCFE() {
-    const years = Object.keys(this.data.financialHistory).sort();
+    const years = Object.keys(this.normalizedData.financialHistory).sort();
     const latestYear = years[years.length - 1];
-    const latestData = this.data.financialHistory[latestYear];
+    const latestData = this.normalizedData.financialHistory[latestYear];
     
     // Calculate historical FCF growth
-    const fcfHistory = years.map(year => this.data.financialHistory[year].freeCashFlow);
+    const fcfHistory = years.map(year => this.normalizedData.financialHistory[year].freeCashFlow);
     const avgGrowthRate = this.calculateCAGR(fcfHistory);
     
     // Use conservative growth rate
@@ -58,9 +121,9 @@ class ValuationCalculator {
 
   // Discounted Cash Flow to Firm (FCFF) Model
   calculateFCFF() {
-    const years = Object.keys(this.data.financialHistory).sort();
+    const years = Object.keys(this.normalizedData.financialHistory).sort();
     const latestYear = years[years.length - 1];
-    const latestData = this.data.financialHistory[latestYear];
+    const latestData = this.normalizedData.financialHistory[latestYear];
     
     // Calculate FCFF = Operating Cash Flow - CapEx + Tax Shield on Interest
     const interestExpense = latestData.totalDebt * 0.04; // Estimated interest rate
@@ -112,9 +175,9 @@ class ValuationCalculator {
 
   // Dividend Discount Model (Gordon Growth Model)
   calculateDDM() {
-    const years = Object.keys(this.data.financialHistory).sort();
+    const years = Object.keys(this.normalizedData.financialHistory).sort();
     const latestYear = years[years.length - 1];
-    const latestData = this.data.financialHistory[latestYear];
+    const latestData = this.normalizedData.financialHistory[latestYear];
     
     const currentDividend = latestData.dividend;
     const dividendGrowthRate = this.data.assumptions.dividendGrowthRate;
@@ -142,7 +205,7 @@ class ValuationCalculator {
   calculateRelativeValuation() {
     const currentRatios = this.data.keyRatios.valuationRatios;
     const benchmarks = this.data.industryBenchmarks;
-    const latestData = this.data.financialHistory[Object.keys(this.data.financialHistory).sort().pop()];
+    const latestData = this.normalizedData.financialHistory[Object.keys(this.normalizedData.financialHistory).sort().pop()];
     
     const results = {
       peValuation: {
@@ -179,7 +242,7 @@ class ValuationCalculator {
 
   // Asset-Based Valuation
   calculateAssetBasedValuation() {
-    const latestData = this.data.financialHistory[Object.keys(this.data.financialHistory).sort().pop()];
+    const latestData = this.normalizedData.financialHistory[Object.keys(this.normalizedData.financialHistory).sort().pop()];
     
     return {
       bookValue: {
@@ -208,8 +271,8 @@ class ValuationCalculator {
 
   // Earnings-Based Valuation
   calculateEarningsBasedValuation() {
-    const years = Object.keys(this.data.financialHistory).sort();
-    const earningsHistory = years.map(year => this.data.financialHistory[year].netIncome);
+    const years = Object.keys(this.normalizedData.financialHistory).sort();
+    const earningsHistory = years.map(year => this.normalizedData.financialHistory[year].netIncome);
     const avgEarnings = earningsHistory.reduce((a, b) => a + b, 0) / earningsHistory.length;
     
     const costOfEquity = this.calculateCostOfEquity();
@@ -246,7 +309,7 @@ class ValuationCalculator {
   }
 
   calculateWACC() {
-    const latestData = this.data.financialHistory[Object.keys(this.data.financialHistory).sort().pop()];
+    const latestData = this.normalizedData.financialHistory[Object.keys(this.normalizedData.financialHistory).sort().pop()];
     const equityValue = this.data.marketData.marketCap;
     const debtValue = latestData.totalDebt;
     const totalValue = equityValue + debtValue;
@@ -277,7 +340,7 @@ class ValuationCalculator {
   // Dynamic Weight Calculation for Robust Valuation
   calculateDynamicWeights(fcfeResult, fcffResult, ddmResult, relativeResults, assetResults, earningsResults) {
     const industry = this.data.industry;
-    const latestData = this.data.financialHistory[Object.keys(this.data.financialHistory).sort().pop()];
+    const latestData = this.normalizedData.financialHistory[Object.keys(this.normalizedData.financialHistory).sort().pop()];
     const marketCap = this.data.marketData.marketCap;
     const debtToEquity = this.data.keyRatios.leverageRatios.debtToEquity;
     const beta = this.data.marketData.beta;
@@ -378,12 +441,12 @@ class ValuationCalculator {
     }
 
     const dividendInfo = this.data.dividendInfo;
-    const latestYear = Object.keys(this.data.financialHistory).sort().pop();
-    const latestData = this.data.financialHistory[latestYear];
+    const latestYear = Object.keys(this.normalizedData.financialHistory).sort().pop();
+    const latestData = this.normalizedData.financialHistory[latestYear];
     
     return {
       currentMetrics: {
-        annualDividend: dividendInfo.currentAnnualDividend,
+        annualDividend: this.normalizedData.dividendInfo ? this.normalizedData.dividendInfo.currentAnnualDividend : dividendInfo.currentAnnualDividend,
         dividendYield: dividendInfo.currentDividendYield,
         payoutRatio: dividendInfo.payoutRatio,
         payoutFrequency: dividendInfo.payoutFrequency,
