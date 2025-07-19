@@ -1,0 +1,191 @@
+{
+  "ticker": "TEMPLATE",
+  "companyName": "Company Name Inc.",
+  "industry": "Industry Name",
+  "sector": "Sector Name",
+  "exchange": "NYSE/NASDAQ",
+  "lastUpdated": "YYYY-MM-DD",
+  
+  "marketData": {
+    "currentPrice": 0.00,
+    "marketCap": 0,
+    "enterpriseValue": 0,
+    "sharesOutstanding": 0,
+    "beta": 1.0,
+    "52WeekLow": 0.00,
+    "52WeekHigh": 0.00,
+    "priceTarget": 0.00,
+    "analystRating": "Hold"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+
+  "financialHistory": {
+    "2024": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0
+    },
+    "2023": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0
+    },
+    "2022": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0
+    },
+    "2021": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0
+    },
+    "2020": {
+      "revenue": 0,
+      "grossProfit": 0,
+      "operatingIncome": 0,
+      "netIncome": 0,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 0,
+      "capex": 0,
+      "totalAssets": 0,
+      "totalDebt": 0,
+      "cashAndEquivalents": 0,
+      "shareholdersEquity": 0,
+      "bookValuePerShare": 0.00,
+      "eps": 0.00,
+      "dividend": 0.00,
+      "workingCapital": 0,
+      "totalEquity": 0,
+      "retainedEarnings": 0
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.00,
+      "operatingMargin": 0.00,
+      "netMargin": 0.00,
+      "roe": 0.00,
+      "roa": 0.00,
+      "roic": 0.00
+    },
+    "liquidityRatios": {
+      "currentRatio": 0.00,
+      "quickRatio": 0.00,
+      "cashRatio": 0.00
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.00,
+      "debtToAssets": 0.00,
+      "interestCoverage": 0.00,
+      "debtToEbitda": 0.00
+    },
+    "valuationRatios": {
+      "peRatio": 0.00,
+      "forwardPE": 0.00,
+      "pbRatio": 0.00,
+      "psRatio": 0.00,
+      "evToEbitda": 0.00,
+      "evToSales": 0.00,
+      "pegRatio": 0.00,
+      "priceToFcf": 0.00
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.00,
+      "inventoryTurnover": 0.00,
+      "receivablesTurnover": 0.00
+    }
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.00,
+    "epsGrowth5Y": 0.00,
+    "fcfGrowth5Y": 0.00,
+    "dividendGrowth5Y": 0.00,
+    "dividendGrowthStreak": 0
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 18.0,
+    "averagePB": 3.0,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.025
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.35,
+    "dividendGrowthRate": 0.05,
+    "perpetualGrowthRate": 0.025
+  }
+}
