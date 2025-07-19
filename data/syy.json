@@ -1,0 +1,446 @@
+{
+  "ticker": "SYY",
+  "companyName": "Sysco Corporation",
+  "industry": "Food Distribution",
+  "sector": "Consumer Staples",
+  "exchange": "NYSE",
+  "lastUpdated": "2025-07-19",
+  
+  "marketData": {
+    "currentPrice": 78.41,
+    "marketCap": 38010000000,
+    "enterpriseValue": 51090000000,
+    "sharesOutstanding": 484750000,
+    "beta": 0.82,
+    "52WeekLow": 67.12,
+    "52WeekHigh": 82.23,
+    "priceTarget": 82.73,
+    "analystRating": "Strong Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0492,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.005
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 80788000000,
+      "grossProfit": 14821000000,
+      "operatingIncome": 3501000000,
+      "netIncome": 1909000000,
+      "freeCashFlow": 2099000000,
+      "operatingCashFlow": 2933000000,
+      "capex": 834000000,
+      "totalAssets": 26347000000,
+      "totalDebt": 14609000000,
+      "cashAndEquivalents": 1527000000,
+      "shareholdersEquity": 1945000000,
+      "bookValuePerShare": 3.96,
+      "eps": 3.88,
+      "dividend": 2.16,
+      "workingCapital": 2547000000,
+      "totalEquity": 1922000000,
+      "retainedEarnings": 12792000000,
+      "period": "Trailing Twelve Months as of Q3 2025",
+      "reportingDate": "2025-07-19"
+    },
+    "2024": {
+      "revenue": 78844000000,
+      "grossProfit": 14608000000,
+      "operatingIncome": 3490000000,
+      "netIncome": 1955000000,
+      "freeCashFlow": 2157000000,
+      "operatingCashFlow": 2989000000,
+      "capex": 832000000,
+      "totalAssets": 24917000000,
+      "totalDebt": 12946000000,
+      "cashAndEquivalents": 696000000,
+      "shareholdersEquity": 1891000000,
+      "bookValuePerShare": 3.78,
+      "eps": 3.89,
+      "dividend": 2.01,
+      "workingCapital": 1802000000,
+      "totalEquity": 1860000000,
+      "retainedEarnings": 12260000000
+    },
+    "2023": {
+      "revenue": 76325000000,
+      "grossProfit": 13952000000,
+      "operatingIncome": 3161000000,
+      "netIncome": 1770000000,
+      "freeCashFlow": 2075000000,
+      "operatingCashFlow": 2868000000,
+      "capex": 793000000,
+      "totalAssets": 22821000000,
+      "totalDebt": 11166000000,
+      "cashAndEquivalents": 745000000,
+      "shareholdersEquity": 2042000000,
+      "bookValuePerShare": 3.98,
+      "eps": 3.47,
+      "dividend": 1.97,
+      "workingCapital": 2068000000,
+      "totalEquity": 2009000000,
+      "retainedEarnings": 11311000000
+    },
+    "2022": {
+      "revenue": 68636000000,
+      "grossProfit": 12320000000,
+      "operatingIncome": 2367000000,
+      "netIncome": 1359000000,
+      "freeCashFlow": 1158000000,
+      "operatingCashFlow": 1791000000,
+      "capex": 633000000,
+      "totalAssets": 22086000000,
+      "totalDebt": 11392000000,
+      "cashAndEquivalents": 867000000,
+      "shareholdersEquity": 1414000000,
+      "bookValuePerShare": 2.72,
+      "eps": 2.64,
+      "dividend": 1.90,
+      "workingCapital": 1733000000,
+      "totalEquity": 1382000000,
+      "retainedEarnings": 10540000000
+    },
+    "2021": {
+      "revenue": 51298000000,
+      "grossProfit": 9357000000,
+      "operatingIncome": 1467000000,
+      "netIncome": 524000000,
+      "freeCashFlow": 1433000000,
+      "operatingCashFlow": 1904000000,
+      "capex": 471000000,
+      "totalAssets": 21414000000,
+      "totalDebt": 11820000000,
+      "cashAndEquivalents": 3007000000,
+      "shareholdersEquity": 1587000000,
+      "bookValuePerShare": 3.03,
+      "eps": 1.02,
+      "dividend": 1.82,
+      "workingCapital": 3414000000,
+      "totalEquity": 1553000000,
+      "retainedEarnings": 10152000000
+    },
+    "2020": {
+      "revenue": 52893000000,
+      "grossProfit": 9902000000,
+      "operatingIncome": 943000000,
+      "netIncome": 215000000,
+      "freeCashFlow": 898000000,
+      "operatingCashFlow": 1619000000,
+      "capex": 720000000,
+      "totalAssets": 22628000000,
+      "totalDebt": 15078000000,
+      "cashAndEquivalents": 6059000000,
+      "shareholdersEquity": 1193000000,
+      "bookValuePerShare": 2.28,
+      "eps": 0.42,
+      "dividend": 1.74,
+      "workingCapital": 5630000000,
+      "totalEquity": 1159000000,
+      "retainedEarnings": 10563000000
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.1835,
+      "operatingMargin": 0.0433,
+      "netMargin": 0.0236,
+      "roe": 0.9361,
+      "roa": 0.0857,
+      "roic": 0.1376
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.26,
+      "quickRatio": 0.72,
+      "cashRatio": 0.157
+    },
+    "leverageRatios": {
+      "debtToEquity": 7.51,
+      "debtToAssets": 0.555,
+      "interestCoverage": 5.52,
+      "debtToEbitda": 3.03
+    },
+    "valuationRatios": {
+      "peRatio": 20.23,
+      "forwardPE": 17.29,
+      "pbRatio": 19.78,
+      "psRatio": 0.48,
+      "evToEbitda": 11.52,
+      "evToSales": 0.63,
+      "pegRatio": 2.79,
+      "priceToFcf": 18.11
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 3.16,
+      "inventoryTurnover": 13.71,
+      "receivablesTurnover": 14.77
+    },
+    "dataNote": "Ratios based on TTM data as of Q3 2025"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.088,
+    "epsGrowth5Y": 0.372,
+    "fcfGrowth5Y": 0.185,
+    "dividendGrowth5Y": 0.044,
+    "dividendGrowthStreak": 56
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 2.16,
+    "currentDividendYield": 0.0277,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.5339,
+    "dividendGrowthRate": 0.0299,
+    "consecutiveYearsOfGrowth": 56,
+    "buybackYield": 0.0247,
+    "shareholderYield": 0.0525,
+    "nextExDividendDate": "2025-10-03",
+    "nextPaymentDate": "2025-10-25",
+    "dividendPolicy": "Sysco maintains a commitment to returning cash to shareholders through consistent dividend payments and share repurchases, with a focus on steady dividend growth backed by strong cash generation.",
+    "aristocratStatus": false,
+    "aristocratSince": null,
+    "dividendKingStatus": true,
+    "dividendKingSince": 1970,
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2025-10-03",
+            "payDate": "2025-10-25",
+            "amount": 0.54,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2025-07-03",
+            "payDate": "2025-07-25",
+            "amount": 0.54,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2025-04-04",
+            "payDate": "2025-04-25",
+            "amount": 0.51,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2025-01-03",
+            "payDate": "2025-01-24",
+            "amount": 0.51,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 2.10
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2024-10-04",
+            "payDate": "2024-10-25",
+            "amount": 0.51,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2024-07-05",
+            "payDate": "2024-07-26",
+            "amount": 0.51,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2024-04-04",
+            "payDate": "2024-04-26",
+            "amount": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2024-01-04",
+            "payDate": "2024-01-26",
+            "amount": 0.50,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 2.02
+      },
+      {
+        "year": 2023,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2023-10-05",
+            "payDate": "2023-10-27",
+            "amount": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2023-07-06",
+            "payDate": "2023-07-28",
+            "amount": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2023-04-05",
+            "payDate": "2023-04-28",
+            "amount": 0.49,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2023-01-05",
+            "payDate": "2023-01-27",
+            "amount": 0.49,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 1.98
+      },
+      {
+        "year": 2022,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2022-10-06",
+            "payDate": "2022-10-28",
+            "amount": 0.49,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2022-06-30",
+            "payDate": "2022-07-22",
+            "amount": 0.49,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2022-03-31",
+            "payDate": "2022-04-22",
+            "amount": 0.47,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2022-01-06",
+            "payDate": "2022-01-28",
+            "amount": 0.47,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 1.92
+      },
+      {
+        "year": 2021,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2021-09-30",
+            "payDate": "2021-10-22",
+            "amount": 0.47,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2021-07-01",
+            "payDate": "2021-07-23",
+            "amount": 0.47,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2021-03-31",
+            "payDate": "2021-04-23",
+            "amount": 0.45,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2021-01-07",
+            "payDate": "2021-01-29",
+            "amount": 0.45,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 1.84
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.030,
+      "growthRate3Y": 0.036,
+      "growthRate5Y": 0.044,
+      "growthRate10Y": 0.045,
+      "compoundAnnualGrowthRate": 0.043,
+      "averageAnnualIncrease": 0.06,
+      "consecutiveIncreases": 56,
+      "lastCut": "Never in modern history",
+      "sustainabilityScore": "Very High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 1.87,
+      "freeCashFlowCoverage": 0.97,
+      "debtServiceCoverage": 3.00,
+      "dividendToFcfRatio": 1.03,
+      "retentionRatio": 0.466,
+      "sustainableDividendGrowth": 0.044,
+      "impliedGrowthRate": 0.030
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.020,
+      "industryAveragePayoutRatio": 0.45,
+      "industryAverageGrowthRate": 0.025,
+      "relativeYieldRanking": "Above Average",
+      "relativeGrowthRanking": "Above Average",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 22.5,
+    "averagePB": 3.8,
+    "averageROE": 0.12,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.020
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.2373,
+    "reinvestmentRate": 0.45,
+    "dividendGrowthRate": 0.03,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.55,
+      "minimumPayoutRatio": 0.50,
+      "maximumPayoutRatio": 0.65,
+      "expectedDividendGrowth": 0.030,
+      "conservativeDividendGrowth": 0.020,
+      "optimisticDividendGrowth": 0.045,
+      "sustainabilityThreshold": 0.70,
+      "cyclicalAdjustment": true,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Equal to dividend",
+      "specialDividendPotential": false
+    }
+  }
+}
