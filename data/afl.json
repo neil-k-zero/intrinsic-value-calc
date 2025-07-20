@@ -1,0 +1,434 @@
+{
+  "ticker": "AFL",
+  "companyName": "Aflac Incorporated",
+  "industry": "Insurance - Life",
+  "sector": "Financials",
+  "exchange": "NYSE",
+  "lastUpdated": "2025-07-19",
+  "currency": "USD",
+  "currencyNote": "All financial data reported in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Primary reporting currency is USD"
+  },
+  
+  "marketData": {
+    "currentPrice": 101.83,
+    "currentPriceCurrency": "USD",
+    "marketCap": 55050000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 61020000000,
+    "sharesOutstanding": 540650000,
+    "beta": 0.80,
+    "52WeekLow": 92.44,
+    "52WeekHigh": 115.50,
+    "priceTarget": 107.07,
+    "analystRating": "Hold",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.08,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.015
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 16889000000,
+      "grossProfit": 7670000000,
+      "operatingIncome": 4592000000,
+      "netIncome": 3593000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 2447000000,
+      "capex": 0,
+      "totalAssets": 120258000000,
+      "totalDebt": 11197000000,
+      "cashAndEquivalents": 5231000000,
+      "shareholdersEquity": 26338000000,
+      "bookValuePerShare": 48.55,
+      "eps": 6.44,
+      "dividend": 2.32,
+      "workingCapital": 2580000000,
+      "totalEquity": 26338000000,
+      "retainedEarnings": 52308000000,
+      "period": "Trailing Twelve Months as of 2025-03-31",
+      "reportingDate": "2025-04-30",
+      "currency": "USD"
+    },
+    "2024": {
+      "revenue": 18927000000,
+      "grossProfit": 9220000000,
+      "operatingIncome": 6614000000,
+      "netIncome": 5443000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 2707000000,
+      "capex": 0,
+      "totalAssets": 117566000000,
+      "totalDebt": 9864000000,
+      "cashAndEquivalents": 6229000000,
+      "shareholdersEquity": 26098000000,
+      "bookValuePerShare": 47.45,
+      "eps": 9.63,
+      "dividend": 2.00,
+      "workingCapital": 2580000000,
+      "totalEquity": 26098000000,
+      "retainedEarnings": 52277000000,
+      "currency": "USD"
+    },
+    "2023": {
+      "revenue": 18701000000,
+      "grossProfit": 8956000000,
+      "operatingIncome": 5457000000,
+      "netIncome": 4659000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 3190000000,
+      "capex": 0,
+      "totalAssets": 126724000000,
+      "totalDebt": 9286000000,
+      "cashAndEquivalents": 4306000000,
+      "shareholdersEquity": 21985000000,
+      "bookValuePerShare": 38.00,
+      "eps": 7.78,
+      "dividend": 1.68,
+      "workingCapital": 2580000000,
+      "totalEquity": 21985000000,
+      "retainedEarnings": 47993000000,
+      "currency": "USD"
+    },
+    "2022": {
+      "revenue": 19140000000,
+      "grossProfit": 9095000000,
+      "operatingIncome": 5095000000,
+      "netIncome": 4418000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 3879000000,
+      "capex": 0,
+      "totalAssets": 131738000000,
+      "totalDebt": 9834000000,
+      "cashAndEquivalents": 3943000000,
+      "shareholdersEquity": 20140000000,
+      "bookValuePerShare": 32.73,
+      "eps": 6.93,
+      "dividend": 1.60,
+      "workingCapital": 2580000000,
+      "totalEquity": 20140000000,
+      "retainedEarnings": 44367000000,
+      "currency": "USD"
+    },
+    "2021": {
+      "revenue": 21554000000,
+      "grossProfit": 11078000000,
+      "operatingIncome": 5446000000,
+      "netIncome": 4231000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 5051000000,
+      "capex": 0,
+      "totalAssets": 157542000000,
+      "totalDebt": 10172000000,
+      "cashAndEquivalents": 5051000000,
+      "shareholdersEquity": 33253000000,
+      "bookValuePerShare": 50.99,
+      "eps": 6.25,
+      "dividend": 1.32,
+      "workingCapital": 2580000000,
+      "totalEquity": 33253000000,
+      "retainedEarnings": 41381000000,
+      "currency": "USD"
+    },
+    "2020": {
+      "revenue": 22147000000,
+      "grossProfit": 11371000000,
+      "operatingIncome": 4401000000,
+      "netIncome": 4778000000,
+      "freeCashFlow": 0,
+      "operatingCashFlow": 5958000000,
+      "capex": 0,
+      "totalAssets": 165086000000,
+      "totalDebt": 8863000000,
+      "cashAndEquivalents": 5141000000,
+      "shareholdersEquity": 33559000000,
+      "bookValuePerShare": 48.46,
+      "eps": 6.67,
+      "dividend": 1.12,
+      "workingCapital": 2580000000,
+      "totalEquity": 33559000000,
+      "retainedEarnings": 37984000000,
+      "currency": "USD"
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.4541,
+      "operatingMargin": 0.2719,
+      "netMargin": 0.2127,
+      "roe": 0.1441,
+      "roa": 0.0234,
+      "roic": 0.0788
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.38,
+      "quickRatio": 1.24,
+      "cashRatio": 0.62
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.43,
+      "debtToAssets": 0.093,
+      "interestCoverage": 22.96,
+      "debtToEbitda": 2.40
+    },
+    "valuationRatios": {
+      "peRatio": 15.80,
+      "forwardPE": 14.84,
+      "pbRatio": 2.10,
+      "psRatio": 3.35,
+      "evToEbitda": 13.17,
+      "evToSales": 3.61,
+      "pegRatio": 3.23,
+      "priceToFcf": 0.00
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.14,
+      "inventoryTurnover": 0.00,
+      "receivablesTurnover": 0.00
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-03-31"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": -0.053,
+    "epsGrowth5Y": -0.008,
+    "fcfGrowth5Y": 0.00,
+    "dividendGrowth5Y": 0.157,
+    "dividendGrowthStreak": 41
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 2.32,
+    "currentAnnualDividendUSD": 2.32,
+    "currentDividendYield": 0.0229,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.3352,
+    "dividendGrowthRate": 0.1739,
+    "consecutiveYearsOfGrowth": 41,
+    "buybackYield": 0.0547,
+    "shareholderYield": 0.0776,
+    "nextExDividendDate": "2025-08-21",
+    "nextPaymentDate": "2025-09-02",
+    "dividendPolicy": "Quarterly cash dividend with long-term commitment to dividend growth",
+    "aristocratStatus": true,
+    "aristocratSince": 1984,
+    "currencyNote": "Dividend paid in USD",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2025-11-20",
+            "payDate": "2025-12-02",
+            "amount": 0.58,
+            "amountUSD": 0.58,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q3", 
+            "exDate": "2025-08-21",
+            "payDate": "2025-09-02",
+            "amount": 0.58,
+            "amountUSD": 0.58,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2025-05-21", 
+            "payDate": "2025-06-02",
+            "amount": 0.58,
+            "amountUSD": 0.58,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2025-02-19",
+            "payDate": "2025-03-03",
+            "amount": 0.58,
+            "amountUSD": 0.58,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 2.32,
+        "annualTotalUSD": 2.32
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2024-11-20",
+            "payDate": "2024-12-02", 
+            "amount": 0.50,
+            "amountUSD": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2024-08-21",
+            "payDate": "2024-09-02",
+            "amount": 0.50,
+            "amountUSD": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2024-05-21",
+            "payDate": "2024-06-03",
+            "amount": 0.50,
+            "amountUSD": 0.50,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2024-02-20",
+            "payDate": "2024-03-01",
+            "amount": 0.50,
+            "amountUSD": 0.50,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 2.00,
+        "annualTotalUSD": 2.00
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.16,
+      "growthRate3Y": 0.113,
+      "growthRate5Y": 0.157,
+      "growthRate10Y": 0.154,
+      "compoundAnnualGrowthRate": 0.157,
+      "averageAnnualIncrease": 0.157,
+      "consecutiveIncreases": 41,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 2.78,
+      "freeCashFlowCoverage": 0.00,
+      "debtServiceCoverage": 12.25,
+      "dividendToFcfRatio": 0.00,
+      "retentionRatio": 0.64,
+      "sustainableDividendGrowth": 0.09,
+      "impliedGrowthRate": 0.14
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.025,
+      "industryAveragePayoutRatio": 0.40,
+      "industryAverageGrowthRate": 0.05,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Above",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 12.0,
+    "averagePB": 1.8,
+    "averageROE": 0.12,
+    "averageDebtToEquity": 0.5,
+    "averageRevGrowth": 0.03,
+    "averageDividendYield": 0.025
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.1819,
+    "reinvestmentRate": 0.30,
+    "dividendGrowthRate": 0.08,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.35,
+      "minimumPayoutRatio": 0.30,
+      "maximumPayoutRatio": 0.40,
+      "expectedDividendGrowth": 0.08,
+      "conservativeDividendGrowth": 0.05,
+      "optimisticDividendGrowth": 0.12,
+      "sustainabilityThreshold": 0.60,
+      "cyclicalAdjustment": false,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Secondary to dividend",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "Dividend paid in USD with no hedging requirements"
+    }
+  },
+
+  "businessSegments": {
+    "aflacJapan": {
+      "revenue": 10400000000,
+      "operatingIncome": 3200000000,
+      "description": "Cancer, medical, nursing care, whole life, and GIFT insurance products in Japan",
+      "growthRate": -0.02,
+      "marketPosition": "Leading supplemental insurance provider in Japan"
+    },
+    "aflacUS": {
+      "revenue": 6489000000,
+      "operatingIncome": 1392000000,
+      "description": "Accident, disability, cancer, critical illness, hospital indemnity, dental, vision, and life insurance in the United States",
+      "growthRate": 0.05,
+      "marketPosition": "Leading voluntary benefits provider in the US"
+    }
+  },
+
+  "geographicRevenue": {
+    "japan": {
+      "revenue": 10400000000,
+      "percentage": 0.62,
+      "growthRate": -0.02,
+      "description": "Japanese operations focused on supplemental health and life insurance"
+    },
+    "unitedStates": {
+      "revenue": 6489000000,
+      "percentage": 0.38,
+      "growthRate": 0.05,
+      "description": "US voluntary benefits and supplemental insurance operations"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Leading provider of supplemental insurance in both Japan and the US with strong brand recognition",
+    "keyProducts": [
+      "Cancer insurance",
+      "Medical insurance", 
+      "Accident insurance",
+      "Disability insurance",
+      "Critical illness insurance",
+      "Hospital indemnity insurance",
+      "Life insurance"
+    ],
+    "competitiveAdvantages": [
+      "Strong brand recognition and customer loyalty",
+      "Established distribution networks in both markets",
+      "41-year track record of dividend increases (Dividend Aristocrat)",
+      "Conservative investment approach with focus on capital preservation",
+      "Leading market position in voluntary benefits",
+      "Strong financial ratings and regulatory compliance",
+      "Diversified geographic exposure reducing single-market risk"
+    ],
+    "risks": [
+      "Recent cybersecurity breach affecting customer data",
+      "Exposure to foreign exchange rate fluctuations from Japanese operations",
+      "Regulatory changes in insurance markets",
+      "Competition from traditional and insurtech companies",
+      "Interest rate sensitivity affecting investment income",
+      "Aging population demographic changes in Japan",
+      "Healthcare system changes affecting supplemental insurance demand"
+    ]
+  }
+}

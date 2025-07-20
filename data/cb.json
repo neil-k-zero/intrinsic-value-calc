@@ -1,0 +1,185 @@
+{
+  "ticker": "CB",
+  "companyName": "Chubb Limited",
+  "industry": "Insurance - Property & Casualty",
+  "sector": "Financials",
+  "exchange": "NYSE",
+  "lastUpdated": "2025-07-19",
+  "currency": "USD",
+  "currencyNote": "Financial data currency is in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Exchange rate is 1:1 as data is in USD"
+  },
+  "marketData": {
+    "currentPrice": 274.13,
+    "currentPriceCurrency": "USD",
+    "marketCap": 109720000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 128880000000,
+    "sharesOutstanding": 400240000,
+    "beta": 0.54,
+    "52WeekLow": 252.16,
+    "52WeekHigh": 306.91,
+    "priceTarget": 307.57,
+    "analystRating": "Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+  "financialHistory": {
+    "TTM": {
+      "revenue": 56310000000,
+      "grossProfit": 15150000000,
+      "operatingIncome": 10551000000,
+      "netIncome": 8460000000,
+      "freeCashFlow": 11917000000,
+      "operatingCashFlow": 14528000000,
+      "capex": -302000000,
+      "totalAssets": 251752000000,
+      "totalDebt": 21137000000,
+      "cashAndEquivalents": 6400000000,
+      "shareholdersEquity": 70755000000,
+      "bookValuePerShare": 164.01,
+      "eps": 20.78,
+      "dividend": 3.88,
+      "workingCapital": -75650000000,
+      "totalEquity": 70755000000,
+      "retainedEarnings": 60953000000,
+      "period": "Trailing Twelve Months as of 2025-07-18",
+      "reportingDate": "2025-07-18",
+      "currency": "USD"
+    }
+  },
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.269,
+      "operatingMargin": 0.1874,
+      "netMargin": 0.1502,
+      "roe": 0.1285,
+      "roa": 0.0271,
+      "roic": 0.0742
+    },
+    "liquidityRatios": {
+      "currentRatio": 0.39,
+      "quickRatio": 0.18,
+      "cashRatio": 0.03
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.3,
+      "debtToAssets": 0.0839,
+      "interestCoverage": 14.18,
+      "debtToEbitda": 1.91
+    },
+    "valuationRatios": {
+      "peRatio": 13.19,
+      "forwardPE": 11.4,
+      "pbRatio": 1.67,
+      "psRatio": 1.96,
+      "evToEbitda": 11.86,
+      "evToSales": 2.29,
+      "pegRatio": 2.68,
+      "priceToFcf": 9.2
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.23,
+      "inventoryTurnover": null,
+      "receivablesTurnover": null
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-18"
+  },
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.1087,
+    "epsGrowth5Y": 0.0296,
+    "fcfGrowth5Y": 0.125,
+    "dividendGrowth5Y": 0.0602,
+    "dividendGrowthStreak": 33
+  },
+  "dividendInfo": {
+    "currentAnnualDividend": 3.88,
+    "currentAnnualDividendUSD": 3.88,
+    "currentDividendYield": 0.0141,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.1781,
+    "dividendGrowthRate": 0.0602,
+    "consecutiveYearsOfGrowth": 33,
+    "buybackYield": 0.012,
+    "shareholderYield": 0.0261,
+    "nextExDividendDate": "2025-06-13",
+    "nextPaymentDate": "2025-07-03",
+    "dividendPolicy": "Company dividend policy description",
+    "aristocratStatus": true,
+    "aristocratSince": 1992,
+    "currencyNote": "Dividend currency information and conversion notes if applicable",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q2",
+            "exDate": "2025-06-13",
+            "payDate": "2025-07-03",
+            "amount": 0.97,
+            "amountUSD": 0.97,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 3.88,
+        "annualTotalUSD": 3.88
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.0602,
+      "growthRate3Y": 0.0528,
+      "growthRate5Y": 0.0602,
+      "growthRate10Y": 0.0365,
+      "compoundAnnualGrowthRate": 0.05,
+      "averageAnnualIncrease": 0.05,
+      "consecutiveIncreases": 33,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 0.1781,
+      "freeCashFlowCoverage": 0.1781,
+      "debtServiceCoverage": 0.1781,
+      "dividendToFcfRatio": 0.1781,
+      "retentionRatio": 0.8219,
+      "sustainableDividendGrowth": 0.1781,
+      "impliedGrowthRate": 0.1781
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.025,
+      "industryAveragePayoutRatio": 0.3,
+      "industryAverageGrowthRate": 0.05,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Above",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+  "industryBenchmarks": {
+    "averagePE": 18.0,
+    "averagePB": 3.0,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.025
+  },
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.35,
+    "dividendGrowthRate": 0.05,
+    "perpetualGrowthRate": 0.025
+  }
+}

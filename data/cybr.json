@@ -1,0 +1,184 @@
+{
+  "ticker": "CYBR",
+  "companyName": "CyberArk Software Ltd.",
+  "industry": "Software - Infrastructure",
+  "sector": "Technology",
+  "exchange": "NASDAQ",
+  "lastUpdated": "2025-07-19",
+  "currency": "USD",
+  "currencyNote": "Financial data currency and any conversion notes if applicable",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Exchange rate information if non-USD currency"
+  },
+  "marketData": {
+    "currentPrice": 385.58,
+    "currentPriceCurrency": "USD",
+    "marketCap": 19390000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 18620000000,
+    "sharesOutstanding": 50290000,
+    "beta": 1.00,
+    "52WeekLow": 230.00,
+    "52WeekHigh": 421.00,
+    "priceTarget": 412.66,
+    "analystRating": "Strong Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+  "financialHistory": {
+    "TTM": {
+      "revenue": 1100000000,
+      "grossProfit": 854560000,
+      "operatingIncome": -64260000,
+      "netIncome": -87470000,
+      "freeCashFlow": 250380000,
+      "operatingCashFlow": 261780000,
+      "capex": 11400000,
+      "totalAssets": 3338000000,
+      "totalDebt": 0,
+      "cashAndEquivalents": 722390000,
+      "shareholdersEquity": 2428000000,
+      "bookValuePerShare": 48.76,
+      "eps": -1.92,
+      "dividend": 0.0,
+      "workingCapital": 224960000,
+      "totalEquity": 2428000000,
+      "retainedEarnings": -115190000,
+      "period": "Trailing Twelve Months as of 2025-07-18",
+      "reportingDate": "2025-07-18",
+      "currency": "USD"
+    }
+  },
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.7791,
+      "operatingMargin": -0.0586,
+      "netMargin": -0.0797,
+      "roe": -0.0536,
+      "roa": -0.0149,
+      "roic": -0.0209
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.29,
+      "quickRatio": 1.21,
+      "cashRatio": 0.72
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.0,
+      "debtToAssets": 0.0,
+      "interestCoverage": -24.16,
+      "debtToEbitda": 0.0
+    },
+    "valuationRatios": {
+      "peRatio": null,
+      "forwardPE": 97.98,
+      "pbRatio": 7.91,
+      "psRatio": 16.16,
+      "evToEbitda": 5661.84,
+      "evToSales": 16.97,
+      "pegRatio": 4.26,
+      "priceToFcf": 77.45
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.41,
+      "inventoryTurnover": null,
+      "receivablesTurnover": null
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-18"
+  },
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.3512,
+    "epsGrowth5Y": null,
+    "fcfGrowth5Y": 0.1187,
+    "dividendGrowth5Y": null,
+    "dividendGrowthStreak": 0
+  },
+  "dividendInfo": {
+    "currentAnnualDividend": 0.0,
+    "currentAnnualDividendUSD": 0.0,
+    "currentDividendYield": 0.0,
+    "payoutFrequency": "None",
+    "payoutRatio": null,
+    "dividendGrowthRate": null,
+    "consecutiveYearsOfGrowth": 0,
+    "buybackYield": -0.0952,
+    "shareholderYield": -0.0952,
+    "nextExDividendDate": null,
+    "nextPaymentDate": null,
+    "dividendPolicy": "Company does not pay dividends",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividend currency information and conversion notes if applicable",
+    "recentDividendHistory": [],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": null,
+      "growthRate3Y": null,
+      "growthRate5Y": null,
+      "growthRate10Y": null,
+      "compoundAnnualGrowthRate": null,
+      "averageAnnualIncrease": null,
+      "consecutiveIncreases": 0,
+      "lastCut": "Never",
+      "sustainabilityScore": "Not Applicable"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": null,
+      "freeCashFlowCoverage": null,
+      "debtServiceCoverage": null,
+      "dividendToFcfRatio": null,
+      "retentionRatio": null,
+      "sustainableDividendGrowth": null,
+      "impliedGrowthRate": null
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.025,
+      "industryAveragePayoutRatio": 0.35,
+      "industryAverageGrowthRate": 0.04,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Below",
+      "reliabilityRanking": "Not Applicable"
+    }
+  },
+  "industryBenchmarks": {
+    "averagePE": 18.0,
+    "averagePB": 3.0,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.025
+  },
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.35,
+    "dividendGrowthRate": 0.0,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.0,
+      "minimumPayoutRatio": 0.0,
+      "maximumPayoutRatio": 0.0,
+      "expectedDividendGrowth": 0.0,
+      "conservativeDividendGrowth": 0.0,
+      "optimisticDividendGrowth": 0.0,
+      "sustainabilityThreshold": 0.0,
+      "cyclicalAdjustment": false,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Not Applicable",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "Currency-specific dividend assumptions and hedging information"
+    }
+  }
+}

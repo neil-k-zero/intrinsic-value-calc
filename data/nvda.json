@@ -1,0 +1,185 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "industry": "Semiconductors",
+  "sector": "Technology",
+  "exchange": "NASDAQ",
+  "lastUpdated": "2025-07-19",
+  "currency": "USD",
+  "currencyNote": "Financial data currency is in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Exchange rate is 1:1 as data is in USD"
+  },
+  "marketData": {
+    "currentPrice": 172.41,
+    "currentPriceCurrency": "USD",
+    "marketCap": 4206800000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 4163400000000,
+    "sharesOutstanding": 24400000000,
+    "beta": 2.13,
+    "52WeekLow": 86.62,
+    "52WeekHigh": 174.25,
+    "priceTarget": 178.57,
+    "analystRating": "Strong Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+  "financialHistory": {
+    "TTM": {
+      "revenue": 148520000000,
+      "grossProfit": 104120000000,
+      "operatingIncome": 86182000000,
+      "netIncome": 76774000000,
+      "freeCashFlow": 72064000000,
+      "operatingCashFlow": 76158000000,
+      "capex": -4094000000,
+      "totalAssets": 125254000000,
+      "totalDebt": 10285000000,
+      "cashAndEquivalents": 53691000000,
+      "shareholdersEquity": 83843000000,
+      "bookValuePerShare": 3.44,
+      "eps": 3.10,
+      "dividend": 0.04,
+      "workingCapital": 63393000000,
+      "totalEquity": 83843000000,
+      "retainedEarnings": 72158000000,
+      "period": "Trailing Twelve Months as of 2025-07-18",
+      "reportingDate": "2025-07-18",
+      "currency": "USD"
+    }
+  },
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.7011,
+      "operatingMargin": 0.5803,
+      "netMargin": 0.5169,
+      "roe": 1.1546,
+      "roa": 0.5324,
+      "roic": 0.6972
+    },
+    "liquidityRatios": {
+      "currentRatio": 3.39,
+      "quickRatio": 2.86,
+      "cashRatio": 0.63
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.12,
+      "debtToAssets": 0.082,
+      "interestCoverage": 350.33,
+      "debtToEbitda": 0.12
+    },
+    "valuationRatios": {
+      "peRatio": 55.60,
+      "forwardPE": 35.25,
+      "pbRatio": 50.15,
+      "psRatio": 28.45,
+      "evToEbitda": 47.18,
+      "evToSales": 28.03,
+      "pegRatio": 1.21,
+      "priceToFcf": 58.38
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 1.47,
+      "inventoryTurnover": 4.33,
+      "receivablesTurnover": 6.71
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-18"
+  },
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.2033,
+    "epsGrowth5Y": 0.2046,
+    "fcfGrowth5Y": 0.125,
+    "dividendGrowth5Y": 0.8182,
+    "dividendGrowthStreak": 1
+  },
+  "dividendInfo": {
+    "currentAnnualDividend": 0.04,
+    "currentAnnualDividendUSD": 0.04,
+    "currentDividendYield": 0.0002,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.0129,
+    "dividendGrowthRate": 0.8182,
+    "consecutiveYearsOfGrowth": 1,
+    "buybackYield": 0.0082,
+    "shareholderYield": 0.0084,
+    "nextExDividendDate": "2025-06-11",
+    "nextPaymentDate": "2025-07-03",
+    "dividendPolicy": "Company dividend policy description",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividend currency information and conversion notes if applicable",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q2",
+            "exDate": "2025-06-11",
+            "payDate": "2025-07-03",
+            "amount": 0.01,
+            "amountUSD": 0.01,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.04,
+        "annualTotalUSD": 0.04
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.8182,
+      "growthRate3Y": 0.5,
+      "growthRate5Y": 0.8182,
+      "growthRate10Y": 0.0,
+      "compoundAnnualGrowthRate": 0.5,
+      "averageAnnualIncrease": 0.5,
+      "consecutiveIncreases": 1,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 0.0129,
+      "freeCashFlowCoverage": 0.0129,
+      "debtServiceCoverage": 0.0129,
+      "dividendToFcfRatio": 0.0129,
+      "retentionRatio": 0.9871,
+      "sustainableDividendGrowth": 0.0129,
+      "impliedGrowthRate": 0.0129
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.025,
+      "industryAveragePayoutRatio": 0.3,
+      "industryAverageGrowthRate": 0.05,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Above",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+  "industryBenchmarks": {
+    "averagePE": 18.0,
+    "averagePB": 3.0,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.025
+  },
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.35,
+    "dividendGrowthRate": 0.05,
+    "perpetualGrowthRate": 0.025
+  }
+}

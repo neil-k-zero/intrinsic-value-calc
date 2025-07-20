@@ -1,0 +1,208 @@
+{
+  "ticker": "MRK",
+  "companyName": "Merck & Co., Inc.",
+  "industry": "Drug Manufacturers - General",
+  "sector": "Healthcare",
+  "exchange": "NYSE",
+  "lastUpdated": "2025-07-19",
+  "currency": "USD",
+  "currencyNote": "Financial data currency and any conversion notes if applicable",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Exchange rate information if non-USD currency"
+  },
+  "marketData": {
+    "currentPrice": 79.96,
+    "currentPriceCurrency": "USD",
+    "marketCap": 200780000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 226400000000,
+    "sharesOutstanding": 2510000000,
+    "beta": 0.40,
+    "52WeekLow": 73.31,
+    "52WeekHigh": 128.73,
+    "priceTarget": 112.57,
+    "analystRating": "Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+  "financialHistory": {
+    "TTM": {
+      "revenue": 63920000000,
+      "grossProfit": 49270000000,
+      "operatingIncome": 24410000000,
+      "netIncome": 17430000000,
+      "freeCashFlow": 17040000000,
+      "operatingCashFlow": 20880000000,
+      "capex": 3839000000,
+      "totalAssets": 115122000000,
+      "totalDebt": 34844000000,
+      "cashAndEquivalents": 9230000000,
+      "shareholdersEquity": 48400000000,
+      "bookValuePerShare": 19.21,
+      "eps": 6.88,
+      "dividend": 3.24,
+      "workingCapital": 10329000000,
+      "totalEquity": 48400000000,
+      "retainedEarnings": 66097000000,
+      "period": "Trailing Twelve Months as of 2025-07-18",
+      "reportingDate": "2025-07-18",
+      "currency": "USD"
+    }
+  },
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.7707,
+      "operatingMargin": 0.3819,
+      "netMargin": 0.2727,
+      "roe": 0.3929,
+      "roa": 0.1381,
+      "roic": 0.1933
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.41,
+      "quickRatio": 0.83,
+      "cashRatio": 0.26
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.72,
+      "debtToAssets": 0.30,
+      "interestCoverage": 19.06,
+      "debtToEbitda": 1.20
+    },
+    "valuationRatios": {
+      "peRatio": 11.62,
+      "forwardPE": 8.96,
+      "pbRatio": 4.16,
+      "psRatio": 3.16,
+      "evToEbitda": 7.86,
+      "evToSales": 3.54,
+      "pegRatio": 1.06,
+      "priceToFcf": 11.78
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.58,
+      "inventoryTurnover": 2.31,
+      "receivablesTurnover": 5.52
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-18"
+  },
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.0674,
+    "epsGrowth5Y": 0.0865,
+    "fcfGrowth5Y": 0.0543,
+    "dividendGrowth5Y": 0.0526,
+    "dividendGrowthStreak": 14
+  },
+  "dividendInfo": {
+    "currentAnnualDividend": 3.24,
+    "currentAnnualDividendUSD": 3.24,
+    "currentDividendYield": 0.0397,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.4652,
+    "dividendGrowthRate": 0.0526,
+    "consecutiveYearsOfGrowth": 14,
+    "buybackYield": 0.003,
+    "shareholderYield": 0.0427,
+    "nextExDividendDate": "2025-06-16",
+    "nextPaymentDate": "2025-07-08",
+    "dividendPolicy": "Company dividend policy description",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividend currency information and conversion notes if applicable",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q2",
+            "exDate": "2025-06-16",
+            "payDate": "2025-07-08",
+            "amount": 0.81,
+            "amountUSD": 0.81,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2025-03-17",
+            "payDate": "2025-04-07",
+            "amount": 0.81,
+            "amountUSD": 0.81,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 3.24,
+        "annualTotalUSD": 3.24
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.0526,
+      "growthRate3Y": 0.0548,
+      "growthRate5Y": 0.0526,
+      "growthRate10Y": 0.0656,
+      "compoundAnnualGrowthRate": 0.0543,
+      "averageAnnualIncrease": 0.0543,
+      "consecutiveIncreases": 14,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 2.15,
+      "freeCashFlowCoverage": 4.43,
+      "debtServiceCoverage": 5.12,
+      "dividendToFcfRatio": 0.19,
+      "retentionRatio": 0.54,
+      "sustainableDividendGrowth": 0.05,
+      "impliedGrowthRate": 0.03
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.025,
+      "industryAveragePayoutRatio": 0.35,
+      "industryAverageGrowthRate": 0.04,
+      "relativeYieldRanking": "Above",
+      "relativeGrowthRanking": "Above",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+  "industryBenchmarks": {
+    "averagePE": 18.0,
+    "averagePB": 3.0,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 1.5,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.025
+  },
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.35,
+    "dividendGrowthRate": 0.05,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.30,
+      "minimumPayoutRatio": 0.25,
+      "maximumPayoutRatio": 0.35,
+      "expectedDividendGrowth": 0.05,
+      "conservativeDividendGrowth": 0.03,
+      "optimisticDividendGrowth": 0.08,
+      "sustainabilityThreshold": 0.60,
+      "cyclicalAdjustment": true,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Secondary to dividend",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "Currency-specific dividend assumptions and hedging information"
+    }
+  }
+}
