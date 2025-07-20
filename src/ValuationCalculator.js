@@ -76,6 +76,25 @@ class ValuationCalculator {
     const latestYear = years[years.length - 1];
     const latestData = this.normalizedData.financialHistory[latestYear];
     
+    // Check if latest FCF is negative or zero - FCFE model not meaningful
+    if (latestData.freeCashFlow <= 0) {
+      return {
+        method: 'FCFE',
+        totalValue: 0,
+        valuePerShare: 0,
+        currentPrice: this.data.marketData.currentPrice,
+        upside: 0,
+        notApplicable: true,
+        reason: `FCFE model not applicable due to negative free cash flow (${(latestData.freeCashFlow / 1000000).toFixed(0)}M)`,
+        assumptions: {
+          initialGrowth: 0,
+          terminalGrowth: this.data.assumptions.terminalGrowthRate,
+          discountRate: this.calculateCostOfEquity(),
+          yearsProjected: 5
+        }
+      };
+    }
+    
     // Calculate historical FCF growth
     const fcfHistory = years.map(year => this.normalizedData.financialHistory[year].freeCashFlow);
     const avgGrowthRate = this.calculateCAGR(fcfHistory);
@@ -412,7 +431,7 @@ class ValuationCalculator {
     if (Math.abs(relativeResults.evEbitdaValuation.upside) > 100) weights.evEbitda *= 0.5;
 
     // Filter out negative or unrealistic valuations
-    if (fcfeResult.valuePerShare <= 0 || Math.abs(fcfeResult.upside) > 150) weights.fcfe = 0;
+    if (fcfeResult.valuePerShare <= 0 || Math.abs(fcfeResult.upside) > 150 || fcfeResult.notApplicable) weights.fcfe = 0;
     if (fcffResult.valuePerShare <= 0 || Math.abs(fcffResult.upside) > 150) weights.fcff = 0;
     if (ddmResult.valuePerShare <= 0 || Math.abs(ddmResult.upside) > 150) weights.ddm = 0;
     if (assetResults.bookValue.valuePerShare <= 0) weights.bookValue = 0;

@@ -70,11 +70,17 @@ function printValuationResults(results, companyData) {
   
   const fcfe = results.valuationBreakdown.fcfe;
   console.log(`   Free Cash Flow to Equity (FCFE):`);
-  console.log(`   └─ Value per Share: ${formatCurrency(fcfe.valuePerShare, displayCurrency)}`);
-  console.log(`   └─ Upside: ${formatPercent(fcfe.upside)}`);
-  console.log(`   └─ Discount Rate: ${formatPercent(fcfe.assumptions.discountRate * 100)}`);
-  console.log(`   └─ Growth Rate: ${formatPercent(fcfe.assumptions.initialGrowth * 100)}`);
-  
+  if (fcfe.notApplicable) {
+    console.log(`   └─ Value per Share: N/A`);
+    console.log(`   └─ Reason: ${fcfe.reason}`);
+    console.log(`   └─ Discount Rate: ${formatPercent(fcfe.assumptions.discountRate * 100)}`);
+    console.log(`   └─ Growth Rate: N/A`);
+  } else {
+    console.log(`   └─ Value per Share: ${formatCurrency(fcfe.valuePerShare, displayCurrency)}`);
+    console.log(`   └─ Upside: ${formatPercent(fcfe.upside)}`);
+    console.log(`   └─ Discount Rate: ${formatPercent(fcfe.assumptions.discountRate * 100)}`);
+    console.log(`   └─ Growth Rate: ${formatPercent(fcfe.assumptions.initialGrowth * 100)}`);
+  }
   const fcff = results.valuationBreakdown.fcff;
   console.log(`\\n   Free Cash Flow to Firm (FCFF):`);
   console.log(`   └─ Value per Share: ${formatCurrency(fcff.valuePerShare, displayCurrency)}`);
