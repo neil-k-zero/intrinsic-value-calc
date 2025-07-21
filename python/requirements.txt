@@ -1,0 +1,23 @@
+# Python dependencies for Company Value Calculator
+#
+# Core requirements - no external dependencies needed for the main calculator
+# The implementation uses only Python standard library modules:
+# - json (for data loading)
+# - copy (for deep copying data structures)
+# - math (for mathematical calculations)
+# - datetime (for date handling)
+# - pathlib (for file path handling)
+# - typing (for type hints)
+# - argparse (for command line interface)
+
+# Optional dependencies for development and testing
+pytest>=7.0.0          # For unit testing
+pytest-cov>=4.0.0      # For test coverage reports
+black>=22.0.0          # For code formatting
+flake8>=5.0.0          # For code linting
+mypy>=1.0.0            # For static type checking
+
+# Optional dependencies for enhanced features (not required for basic functionality)
+pandas>=1.5.0          # For advanced data analysis (optional)
+numpy>=1.20.0          # For numerical computations (optional)
+matplotlib>=3.5.0      # For plotting (optional)
