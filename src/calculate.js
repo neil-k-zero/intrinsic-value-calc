@@ -131,17 +131,26 @@ function printValuationResults(results, companyData) {
   console.log(`\\n⚠️  RISK ASSESSMENT`);
   const risk = results.riskMetrics;
   console.log(`Financial Risk:    ${risk.financial.riskLevel}`);
-  console.log(`└─ Debt/Equity:    ${risk.financial.debtToEquity.toFixed(2)}x`);
-  console.log(`└─ Current Ratio:  ${risk.financial.currentRatio.toFixed(2)}x`);
-  console.log(`└─ Interest Cover: ${risk.financial.interestCoverage.toFixed(1)}x`);
+  
+  // Handle null values gracefully
+  const debtToEquity = risk.financial.debtToEquity;
+  const currentRatio = risk.financial.currentRatio;
+  const interestCoverage = risk.financial.interestCoverage;
+  const beta = risk.business.beta;
+  const peRatio = risk.valuation.peRatio;
+  const pbRatio = risk.valuation.pbRatio;
+  
+  console.log(`└─ Debt/Equity:    ${debtToEquity !== null && debtToEquity !== undefined ? debtToEquity.toFixed(2) + 'x' : 'N/A (Negative Equity)'}`);
+  console.log(`└─ Current Ratio:  ${currentRatio !== null && currentRatio !== undefined ? currentRatio.toFixed(2) + 'x' : 'N/A'}`);
+  console.log(`└─ Interest Cover: ${interestCoverage !== null && interestCoverage !== undefined ? interestCoverage.toFixed(1) + 'x' : 'N/A'}`);
   
   console.log(`\\nBusiness Risk:     ${risk.business.volatilityRisk}`);
-  console.log(`└─ Beta:           ${risk.business.beta.toFixed(2)}`);
+  console.log(`└─ Beta:           ${beta !== null && beta !== undefined ? beta.toFixed(2) : 'N/A'}`);
   console.log(`└─ Industry:       ${risk.business.industryRisk}`);
   
   console.log(`\\nValuation Risk:    ${risk.valuation.valuationRisk}`);
-  console.log(`└─ P/E Ratio:      ${risk.valuation.peRatio.toFixed(1)}x`);
-  console.log(`└─ P/B Ratio:      ${risk.valuation.pbRatio.toFixed(1)}x`);
+  console.log(`└─ P/E Ratio:      ${peRatio !== null && peRatio !== undefined ? peRatio.toFixed(1) + 'x' : 'N/A'}`);
+  console.log(`└─ P/B Ratio:      ${pbRatio !== null && pbRatio !== undefined ? pbRatio.toFixed(1) + 'x' : 'N/A'}`);
 
   // Enhanced Dividend Analysis
   if (results.dividendAnalysis) {
@@ -170,8 +179,10 @@ function printValuationResults(results, companyData) {
     console.log(`   Last Dividend Cut:     ${dividend.growthAnalysis.lastCut}`);
 
     console.log(`\\nSustainability Analysis:`);
-    console.log(`   Earnings Coverage:     ${dividend.sustainability.earningsCoverage.toFixed(1)}x`);
-    console.log(`   FCF Coverage:          ${dividend.sustainability.fcfCoverage.toFixed(1)}x`);
+    const earningsCoverage = dividend.sustainability.earningsCoverage;
+    const fcfCoverage = dividend.sustainability.fcfCoverage;
+    console.log(`   Earnings Coverage:     ${earningsCoverage !== null && earningsCoverage !== undefined ? earningsCoverage.toFixed(1) + 'x' : 'N/A'}`);
+    console.log(`   FCF Coverage:          ${fcfCoverage !== null && fcfCoverage !== undefined ? fcfCoverage.toFixed(1) + 'x' : 'N/A'}`);
     console.log(`   Retention Ratio:       ${formatPercent(dividend.sustainability.retentionRatio * 100)}`);
     console.log(`   Sustainability Score:  ${dividend.sustainability.sustainabilityScore}`);
     
@@ -182,8 +193,10 @@ function printValuationResults(results, companyData) {
     console.log(`   Reliability Ranking:   ${dividend.peerComparison.reliabilityRanking}`);
 
     console.log(`\\nInvestment Projections (at current price):`);
-    console.log(`   Yield on Cost (10Y):   ${dividend.dividendInvestmentMetrics.yieldOnCost10Y.toFixed(1)}%`);
-    console.log(`   Yield on Cost (20Y):   ${dividend.dividendInvestmentMetrics.yieldOnCost20Y.toFixed(1)}%`);
+    const yieldOnCost10Y = dividend.dividendInvestmentMetrics.yieldOnCost10Y;
+    const yieldOnCost20Y = dividend.dividendInvestmentMetrics.yieldOnCost20Y;
+    console.log(`   Yield on Cost (10Y):   ${yieldOnCost10Y !== null && yieldOnCost10Y !== undefined ? yieldOnCost10Y.toFixed(1) + '%' : '0.0%'}`);
+    console.log(`   Yield on Cost (20Y):   ${yieldOnCost20Y !== null && yieldOnCost20Y !== undefined ? yieldOnCost20Y.toFixed(1) + '%' : '0.0%'}`);
     
     const totalReturn = dividend.dividendInvestmentMetrics.totalReturnContribution;
     console.log(`\\nTotal Return Breakdown:`);

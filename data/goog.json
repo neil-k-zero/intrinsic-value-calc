@@ -1,0 +1,455 @@
+{
+  "ticker": "GOOG",
+  "companyName": "Alphabet Inc.",
+  "industry": "Internet Content & Information",
+  "sector": "Communication Services",
+  "exchange": "NASDAQ",
+  "lastUpdated": "2025-07-20",
+  "currency": "USD",
+  "currencyNote": "All financial data in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "USD base currency"
+  },
+  
+  "marketData": {
+    "currentPrice": 185.94,
+    "currentPriceCurrency": "USD",
+    "marketCap": 2250461000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 2183631000000,
+    "sharesOutstanding": 12155000000,
+    "beta": 1.01,
+    "52WeekLow": 142.66,
+    "52WeekHigh": 208.70,
+    "priceTarget": 203.83,
+    "analystRating": "Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.01
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 359713000000,
+      "grossProfit": 210758000000,
+      "operatingIncome": 119320000000,
+      "netIncome": 110996000000,
+      "freeCashFlow": 74881000000,
+      "operatingCashFlow": 132601000000,
+      "capex": 57720000000,
+      "totalAssets": 475374000000,
+      "totalDebt": 28498000000,
+      "cashAndEquivalents": 95328000000,
+      "shareholdersEquity": 345267000000,
+      "bookValuePerShare": 28.41,
+      "eps": 8.96,
+      "dividend": 0.84,
+      "workingCapital": 70398000000,
+      "totalEquity": 345267000000,
+      "retainedEarnings": 262628000000,
+      "period": "Trailing Twelve Months as of 2025-07-18",
+      "reportingDate": "2025-07-18",
+      "currency": "USD"
+    },
+    "2024": {
+      "revenue": 350018000000,
+      "grossProfit": 203712000000,
+      "operatingIncome": 114186000000,
+      "netIncome": 100118000000,
+      "freeCashFlow": 72764000000,
+      "operatingCashFlow": 125299000000,
+      "capex": 52535000000,
+      "totalAssets": 450256000000,
+      "totalDebt": 28137000000,
+      "cashAndEquivalents": 95657000000,
+      "shareholdersEquity": 325084000000,
+      "bookValuePerShare": 26.62,
+      "eps": 8.04,
+      "dividend": 0.80,
+      "workingCapital": 74589000000,
+      "totalEquity": 325084000000,
+      "retainedEarnings": 245084000000,
+      "currency": "USD"
+    },
+    "2023": {
+      "revenue": 307394000000,
+      "grossProfit": 174062000000,
+      "operatingIncome": 84293000000,
+      "netIncome": 73795000000,
+      "freeCashFlow": 69495000000,
+      "operatingCashFlow": 101746000000,
+      "capex": 32251000000,
+      "totalAssets": 402392000000,
+      "totalDebt": 29787000000,
+      "cashAndEquivalents": 110916000000,
+      "shareholdersEquity": 283379000000,
+      "bookValuePerShare": 22.74,
+      "eps": 5.80,
+      "dividend": 0.00,
+      "workingCapital": 89716000000,
+      "totalEquity": 283379000000,
+      "retainedEarnings": 211247000000,
+      "currency": "USD"
+    },
+    "2022": {
+      "revenue": 282836000000,
+      "grossProfit": 156633000000,
+      "operatingIncome": 74842000000,
+      "netIncome": 59972000000,
+      "freeCashFlow": 60010000000,
+      "operatingCashFlow": 91495000000,
+      "capex": 31485000000,
+      "totalAssets": 365264000000,
+      "totalDebt": 29977000000,
+      "cashAndEquivalents": 113762000000,
+      "shareholdersEquity": 256144000000,
+      "bookValuePerShare": 19.93,
+      "eps": 4.56,
+      "dividend": 0.00,
+      "workingCapital": 95495000000,
+      "totalEquity": 256144000000,
+      "retainedEarnings": 195563000000,
+      "currency": "USD"
+    },
+    "2021": {
+      "revenue": 257637000000,
+      "grossProfit": 146698000000,
+      "operatingIncome": 78714000000,
+      "netIncome": 76033000000,
+      "freeCashFlow": 67012000000,
+      "operatingCashFlow": 91652000000,
+      "capex": 24640000000,
+      "totalAssets": 359268000000,
+      "totalDebt": 28508000000,
+      "cashAndEquivalents": 139649000000,
+      "shareholdersEquity": 251635000000,
+      "bookValuePerShare": 19.00,
+      "eps": 5.61,
+      "dividend": 0.00,
+      "workingCapital": 123889000000,
+      "totalEquity": 251635000000,
+      "retainedEarnings": 191484000000,
+      "currency": "USD"
+    },
+    "2020": {
+      "revenue": 182527000000,
+      "grossProfit": 97795000000,
+      "operatingIncome": 41224000000,
+      "netIncome": 40269000000,
+      "freeCashFlow": 42843000000,
+      "operatingCashFlow": 65124000000,
+      "capex": 22281000000,
+      "totalAssets": 319616000000,
+      "totalDebt": 27872000000,
+      "cashAndEquivalents": 136694000000,
+      "shareholdersEquity": 222544000000,
+      "bookValuePerShare": 16.48,
+      "eps": 2.93,
+      "dividend": 0.00,
+      "workingCapital": 117462000000,
+      "totalEquity": 222544000000,
+      "retainedEarnings": 163401000000,
+      "currency": "USD"
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.5859,
+      "operatingMargin": 0.3317,
+      "netMargin": 0.3086,
+      "roe": 0.3479,
+      "roa": 0.1690,
+      "roic": 0.2146
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.77,
+      "quickRatio": 1.60,
+      "cashRatio": 1.04
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.08,
+      "debtToAssets": 0.06,
+      "interestCoverage": 573.65,
+      "debtToEbitda": 0.20
+    },
+    "valuationRatios": {
+      "peRatio": 20.28,
+      "forwardPE": 19.90,
+      "pbRatio": 6.52,
+      "psRatio": 6.26,
+      "evToEbitda": 16.09,
+      "evToSales": 6.07,
+      "pegRatio": 1.28,
+      "priceToFcf": 30.05
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 0.82,
+      "inventoryTurnover": 0.00,
+      "receivablesTurnover": 7.06
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-18"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.1449,
+    "epsGrowth5Y": 0.2517,
+    "fcfGrowth5Y": 0.1174,
+    "dividendGrowth5Y": 0.00,
+    "dividendGrowthStreak": 1
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 0.84,
+    "currentAnnualDividendUSD": 0.84,
+    "currentDividendYield": 0.0045,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.0938,
+    "dividendGrowthRate": 0.05,
+    "consecutiveYearsOfGrowth": 1,
+    "buybackYield": 0.0206,
+    "shareholderYield": 0.0251,
+    "nextExDividendDate": "2025-09-09",
+    "nextPaymentDate": "2025-09-16",
+    "dividendPolicy": "Alphabet initiated its first dividend in 2024, focusing on returning capital to shareholders through both dividends and share buybacks",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividend paid in USD",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2025-12-09",
+            "payDate": "2025-12-16",
+            "amount": 0.21,
+            "amountUSD": 0.21,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q3", 
+            "exDate": "2025-09-09",
+            "payDate": "2025-09-16",
+            "amount": 0.21,
+            "amountUSD": 0.21,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2025-06-09", 
+            "payDate": "2025-06-16",
+            "amount": 0.21,
+            "amountUSD": 0.21,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2025-03-10",
+            "payDate": "2025-03-17",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.83,
+        "annualTotalUSD": 0.83
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2024-12-09",
+            "payDate": "2024-12-16", 
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2024-09-09",
+            "payDate": "2024-09-16",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2024-06-10",
+            "payDate": "2024-06-17",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2024-03-11",
+            "payDate": "2024-03-18",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.80,
+        "annualTotalUSD": 0.80
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.05,
+      "growthRate3Y": 0.00,
+      "growthRate5Y": 0.00,
+      "growthRate10Y": 0.00,
+      "compoundAnnualGrowthRate": 0.00,
+      "averageAnnualIncrease": 0.01,
+      "consecutiveIncreases": 1,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 10.67,
+      "freeCashFlowCoverage": 11.67,
+      "debtServiceCoverage": 0.00,
+      "dividendToFcfRatio": 0.086,
+      "retentionRatio": 0.9062,
+      "sustainableDividendGrowth": 0.315,
+      "impliedGrowthRate": 0.05
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.015,
+      "industryAveragePayoutRatio": 0.25,
+      "industryAverageGrowthRate": 0.08,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Average",
+      "reliabilityRanking": "Good"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 25.0,
+    "averagePB": 4.5,
+    "averageROE": 0.20,
+    "averageDebtToEquity": 0.15,
+    "averageRevGrowth": 0.12,
+    "averageDividendYield": 0.015
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.1673,
+    "reinvestmentRate": 0.25,
+    "dividendGrowthRate": 0.10,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.15,
+      "minimumPayoutRatio": 0.08,
+      "maximumPayoutRatio": 0.25,
+      "expectedDividendGrowth": 0.10,
+      "conservativeDividendGrowth": 0.05,
+      "optimisticDividendGrowth": 0.15,
+      "sustainabilityThreshold": 0.30,
+      "cyclicalAdjustment": false,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Primary to dividend",
+      "specialDividendPotential": true,
+      "currencyHedging": false,
+      "currencyNote": "USD base currency, no hedging required"
+    }
+  },
+
+  "businessSegments": {
+    "googleServices": {
+      "revenue": 273600000000,
+      "operatingIncome": 91500000000,
+      "description": "Search, YouTube ads, Network ads, Google other revenues including Google Play, hardware, and subscriptions",
+      "growthRate": 0.14,
+      "marketPosition": "Dominant search engine with 90%+ market share globally"
+    },
+    "googleCloud": {
+      "revenue": 35800000000,
+      "operatingIncome": 1500000000,
+      "description": "Google Cloud Platform, Google Workspace, and other enterprise cloud services",
+      "growthRate": 0.35,
+      "marketPosition": "Third largest cloud provider globally behind AWS and Azure"
+    },
+    "otherBets": {
+      "revenue": 1800000000,
+      "operatingIncome": -4300000000,
+      "description": "Waymo, Verily, Fiber, and other experimental projects",
+      "growthRate": 0.15,
+      "marketPosition": "Early stage ventures in autonomous vehicles, healthcare, and emerging tech"
+    }
+  },
+
+  "geographicRevenue": {
+    "unitedStates": {
+      "revenue": 161900000000,
+      "percentage": 0.45,
+      "growthRate": 0.13,
+      "description": "United States operations including search, cloud, and YouTube"
+    },
+    "emea": {
+      "revenue": 88300000000,
+      "percentage": 0.25,
+      "growthRate": 0.11,
+      "description": "Europe, Middle East, and Africa operations"
+    },
+    "apac": {
+      "revenue": 75200000000,
+      "percentage": 0.21,
+      "growthRate": 0.16,
+      "description": "Asia-Pacific operations with strong growth in India and Southeast Asia"
+    },
+    "otherAmericas": {
+      "revenue": 34400000000,
+      "percentage": 0.09,
+      "growthRate": 0.18,
+      "description": "Canada and Latin America operations"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Dominant position in search with 90%+ global market share, leading position in digital advertising, growing cloud infrastructure business",
+    "keyProducts": [
+      "Google Search",
+      "YouTube",
+      "Google Cloud Platform", 
+      "Android",
+      "Chrome",
+      "Google Ads",
+      "Google Workspace",
+      "Google Maps",
+      "Google Play"
+    ],
+    "competitiveAdvantages": [
+      "Massive data moat from billions of users",
+      "Advanced AI and machine learning capabilities",
+      "Integrated ecosystem of products and services",
+      "Strong brand recognition and user loyalty",
+      "Significant R&D investment and innovation pipeline",
+      "Network effects in advertising and cloud platforms",
+      "Strong cash generation and balance sheet"
+    ],
+    "risks": [
+      "Regulatory scrutiny and potential antitrust actions",
+      "Competition from OpenAI and other AI companies",
+      "Privacy regulations affecting data collection",
+      "Dependence on advertising revenue",
+      "Economic downturns affecting advertising spend",
+      "Increased competition in cloud computing",
+      "Geopolitical tensions affecting international operations"
+    ]
+  }
+}

@@ -94,6 +94,11 @@ class CompanyDataBuilder {
     console.log(`   - Yahoo Finance: https://finance.yahoo.com/quote/${ticker}`);
     console.log(`   - SEC Edgar: https://www.sec.gov/edgar/searchedgar/companysearch.html`);
     console.log(`   - Company annual reports (10-K forms)`);
+    console.log(`\\n📋 Important Notes for Non-Dividend Companies:`);
+    console.log(`   - Set "dividend": 0.00 in financial history if company doesn't pay dividends`);
+    console.log(`   - Focus on accurate free cash flow data for DCF valuation`);
+    console.log(`   - Ensure reliable P/E and EV/EBITDA peer comparisons`);
+    console.log(`   - Growth companies: emphasize revenue/earnings growth assumptions`);
     
     return this.template;
   }
@@ -160,12 +165,29 @@ class CompanyDataBuilder {
     console.log(`   Free Cash Flow: $${(latestData.freeCashFlow / 1000000).toFixed(0)}M`);
     console.log(`   Total Debt: $${(latestData.totalDebt / 1000000).toFixed(0)}M`);
     console.log(`   Shareholders Equity: $${(latestData.shareholdersEquity / 1000000).toFixed(0)}M`);
+    
+    // Dividend status
+    const dividend = latestData.dividend || 0;
+    if (dividend > 0) {
+      console.log(`   Annual Dividend: $${dividend.toFixed(2)} per share`);
+    } else {
+      console.log(`   📝 Non-dividend paying company - DDM will be excluded from valuation`);
+    }
 
     console.log(`\\n📊 Key Ratios:`);
     console.log(`   P/E Ratio: ${data.keyRatios.valuationRatios.peRatio.toFixed(1)}x`);
     console.log(`   Debt/Equity: ${data.keyRatios.leverageRatios.debtToEquity.toFixed(2)}x`);
     console.log(`   ROE: ${(data.keyRatios.profitabilityRatios.roe * 100).toFixed(1)}%`);
     console.log(`   Current Ratio: ${data.keyRatios.liquidityRatios.currentRatio.toFixed(2)}x`);
+    
+    // Valuation methodology guidance
+    if (dividend <= 0) {
+      console.log(`\\n💡 Valuation Guidance for Non-Dividend Companies:`);
+      console.log(`   • Primary methods: DCF (FCFE/FCFF), Relative Valuation`);
+      console.log(`   • Consider: P/E, EV/EBITDA, EV/Sales ratios`);
+      console.log(`   • Growth companies: Focus on revenue/earnings growth rates`);
+      console.log(`   • Asset-light businesses: Emphasize cash flow generation`);
+    }
   }
 
   listAvailableCompanies() {

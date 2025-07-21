@@ -1,0 +1,350 @@
+{
+  "ticker": "ETSY",
+  "companyName": "Etsy, Inc.",
+  "industry": "Internet Retail",
+  "sector": "Consumer Discretionary",
+  "exchange": "NASDAQ",
+  "lastUpdated": "2025-07-21",
+  "currency": "USD",
+  "currencyNote": "All financial data in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "USD base currency"
+  },
+  
+  "marketData": {
+    "currentPrice": 59.64,
+    "currentPriceCurrency": "USD",
+    "marketCap": 6220000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 7740000000,
+    "sharesOutstanding": 104280000,
+    "beta": 1.74,
+    "52WeekLow": 40.05,
+    "52WeekHigh": 66.81,
+    "priceTarget": 51.28,
+    "analystRating": "Hold",
+    "dataAsOf": "2025-07-21",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.02
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 2814000000,
+      "grossProfit": 2034000000,
+      "operatingIncome": 391490000,
+      "netIncome": 188180000,
+      "freeCashFlow": 717420000,
+      "operatingCashFlow": 732620000,
+      "capex": -15200000,
+      "totalAssets": 2121000000,
+      "totalDebt": 2387000000,
+      "cashAndEquivalents": 867700000,
+      "shareholdersEquity": -910300000,
+      "bookValuePerShare": -8.66,
+      "eps": 1.54,
+      "dividend": 0.00,
+      "workingCapital": 590850000,
+      "totalEquity": -910300000,
+      "retainedEarnings": -2027000000,
+      "period": "Trailing Twelve Months as of 2025-04-30",
+      "reportingDate": "2025-04-30",
+      "currency": "USD"
+    },
+    "2024": {
+      "revenue": 2808000000,
+      "grossProfit": 2034000000,
+      "operatingIncome": 380210000,
+      "netIncome": 303280000,
+      "freeCashFlow": 738260000,
+      "operatingCashFlow": 752470000,
+      "capex": -14210000,
+      "totalAssets": 2418000000,
+      "totalDebt": 2434000000,
+      "cashAndEquivalents": 1040000000,
+      "shareholdersEquity": -758870000,
+      "bookValuePerShare": -6.99,
+      "eps": 2.35,
+      "dividend": 0.00,
+      "workingCapital": 662580000,
+      "totalEquity": -758870000,
+      "retainedEarnings": -1784000000,
+      "currency": "USD"
+    },
+    "2023": {
+      "revenue": 2748000000,
+      "grossProfit": 1925000000,
+      "operatingIncome": 374510000,
+      "netIncome": 307570000,
+      "freeCashFlow": 692580000,
+      "operatingCashFlow": 705510000,
+      "capex": -12940000,
+      "totalAssets": 2685000000,
+      "totalDebt": 2436000000,
+      "cashAndEquivalents": 1150000000,
+      "shareholdersEquity": -543720000,
+      "bookValuePerShare": -4.57,
+      "eps": 2.24,
+      "dividend": 0.00,
+      "workingCapital": 859670000,
+      "totalEquity": -543720000,
+      "retainedEarnings": -1357000000,
+      "currency": "USD"
+    },
+    "2022": {
+      "revenue": 2566000000,
+      "grossProfit": 1822000000,
+      "operatingIncome": 386460000,
+      "netIncome": -694290000,
+      "freeCashFlow": 673380000,
+      "operatingCashFlow": 683610000,
+      "capex": -10240000,
+      "totalAssets": 2635000000,
+      "totalDebt": 2432000000,
+      "cashAndEquivalents": 1172000000,
+      "shareholdersEquity": -547270000,
+      "bookValuePerShare": -4.38,
+      "eps": -5.48,
+      "dividend": 0.00,
+      "workingCapital": 881990000,
+      "totalEquity": -547270000,
+      "retainedEarnings": -1048000000,
+      "currency": "USD"
+    },
+    "2021": {
+      "revenue": 2329000000,
+      "grossProfit": 1675000000,
+      "operatingIncome": 502440000,
+      "netIncome": 493510000,
+      "freeCashFlow": 640300000,
+      "operatingCashFlow": 651550000,
+      "capex": -11250000,
+      "totalAssets": 3832000000,
+      "totalDebt": 2436000000,
+      "cashAndEquivalents": 984610000,
+      "shareholdersEquity": 628620000,
+      "bookValuePerShare": 4.95,
+      "eps": 3.40,
+      "dividend": 0.00,
+      "workingCapital": 725910000,
+      "totalEquity": 628620000,
+      "retainedEarnings": 71740000,
+      "currency": "USD"
+    },
+    "2020": {
+      "revenue": 1726000000,
+      "grossProfit": 1261000000,
+      "operatingIncome": 425810000,
+      "netIncome": 349250000,
+      "freeCashFlow": 676630000,
+      "operatingCashFlow": 678960000,
+      "capex": -2330000,
+      "totalAssets": 2404000000,
+      "totalDebt": 1138000000,
+      "cashAndEquivalents": 1669000000,
+      "shareholdersEquity": 742420000,
+      "bookValuePerShare": 5.90,
+      "eps": 2.69,
+      "dividend": 0.00,
+      "workingCapital": 1440000000,
+      "totalEquity": 742420000,
+      "retainedEarnings": -146820000,
+      "currency": "USD"
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.7230,
+      "operatingMargin": 0.1391,
+      "netMargin": 0.0669,
+      "roe": null,
+      "roa": 0.1060,
+      "roic": 0.1491
+    },
+    "liquidityRatios": {
+      "currentRatio": 2.14,
+      "quickRatio": 1.69,
+      "cashRatio": 1.67
+    },
+    "leverageRatios": {
+      "debtToEquity": null,
+      "debtToAssets": 1.12,
+      "interestCoverage": 28.36,
+      "debtToEbitda": 5.22
+    },
+    "valuationRatios": {
+      "peRatio": 38.61,
+      "forwardPE": 11.84,
+      "pbRatio": null,
+      "psRatio": 2.38,
+      "evToEbitda": 17.22,
+      "evToSales": 2.75,
+      "pegRatio": 1.78,
+      "priceToFcf": 8.67
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 1.22,
+      "inventoryTurnover": null,
+      "receivablesTurnover": null
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-04-30"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.1029,
+    "epsGrowth5Y": -0.0739,
+    "fcfGrowth5Y": 0.0118,
+    "dividendGrowth5Y": 0.00,
+    "dividendGrowthStreak": 0
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 0.00,
+    "currentAnnualDividendUSD": 0.00,
+    "currentDividendYield": 0.00,
+    "payoutFrequency": "None",
+    "payoutRatio": 0.00,
+    "dividendGrowthRate": 0.00,
+    "consecutiveYearsOfGrowth": 0,
+    "buybackYield": 0.0982,
+    "shareholderYield": 0.0982,
+    "nextExDividendDate": null,
+    "nextPaymentDate": null,
+    "dividendPolicy": "Etsy does not currently pay dividends. The company focuses on share buybacks and growth investments.",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Company does not pay dividends",
+    "recentDividendHistory": [],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.00,
+      "growthRate3Y": 0.00,
+      "growthRate5Y": 0.00,
+      "growthRate10Y": 0.00,
+      "compoundAnnualGrowthRate": 0.00,
+      "averageAnnualIncrease": 0.00,
+      "consecutiveIncreases": 0,
+      "lastCut": "Never - No dividend history",
+      "sustainabilityScore": "N/A"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": null,
+      "freeCashFlowCoverage": null,
+      "debtServiceCoverage": null,
+      "dividendToFcfRatio": 0.00,
+      "retentionRatio": 1.00,
+      "sustainableDividendGrowth": 0.00,
+      "impliedGrowthRate": 0.00
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.00,
+      "industryAveragePayoutRatio": 0.00,
+      "industryAverageGrowthRate": 0.00,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "N/A",
+      "reliabilityRanking": "N/A - No dividend"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 25.0,
+    "averagePB": 4.5,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 0.8,
+    "averageRevGrowth": 0.15,
+    "averageDividendYield": 0.01
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.37,
+    "reinvestmentRate": 0.40,
+    "dividendGrowthRate": 0.00,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.00,
+      "minimumPayoutRatio": 0.00,
+      "maximumPayoutRatio": 0.00,
+      "expectedDividendGrowth": 0.00,
+      "conservativeDividendGrowth": 0.00,
+      "optimisticDividendGrowth": 0.00,
+      "sustainabilityThreshold": 0.00,
+      "cyclicalAdjustment": false,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Primary capital allocation strategy",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "No dividend policy - focus on share buybacks"
+    }
+  },
+
+  "businessSegments": {
+    "Marketplace": {
+      "revenue": 2010000000,
+      "operatingIncome": null,
+      "description": "Etsy's core two-sided marketplace connecting buyers and sellers of unique and creative goods",
+      "growthRate": 0.0078,
+      "marketPosition": "Leading global marketplace for handmade, vintage, and unique items"
+    },
+    "Services": {
+      "revenue": 801300000,
+      "operatingIncome": null,
+      "description": "Seller services including advertising, payment processing, shipping labels, and other tools",
+      "growthRate": 0.0588,
+      "marketPosition": "Comprehensive seller services platform supporting marketplace ecosystem"
+    }
+  },
+
+  "geographicRevenue": {
+    "United States": {
+      "revenue": 1688000000,
+      "percentage": 0.60,
+      "growthRate": 0.02,
+      "description": "Primary market representing majority of platform activity"
+    },
+    "International": {
+      "revenue": 1126000000,
+      "percentage": 0.40,
+      "growthRate": 0.025,
+      "description": "Global markets including Europe, Canada, Australia, and other regions"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Leading global marketplace for unique, handmade, vintage, and creative goods with strong brand recognition and seller ecosystem",
+    "keyProducts": [
+      "Etsy Marketplace - Core platform connecting buyers and sellers",
+      "Reverb - Musical instrument marketplace",
+      "Depop - Fashion resale marketplace",
+      "Seller Services - Advertising, payments, shipping tools"
+    ],
+    "competitiveAdvantages": [
+      "Strong brand associated with handmade and unique items",
+      "Large and loyal seller community of 8+ million active sellers",
+      "Comprehensive seller services ecosystem",
+      "Global reach with localized experiences",
+      "Focus on sustainability and social impact",
+      "Strong cash generation and financial flexibility"
+    ],
+    "risks": [
+      "Economic sensitivity affecting discretionary spending",
+      "Competition from larger e-commerce platforms",
+      "Dependence on marketplace model and seller satisfaction",
+      "Regulatory risks around marketplace operations",
+      "Foreign exchange exposure in international markets",
+      "Potential tariff impacts on cross-border trade"
+    ]
+  }
+}

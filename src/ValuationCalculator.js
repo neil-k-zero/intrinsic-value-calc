@@ -198,9 +198,45 @@ class ValuationCalculator {
     const latestYear = years[years.length - 1];
     const latestData = this.normalizedData.financialHistory[latestYear];
     
-    const currentDividend = latestData.dividend;
+    const currentDividend = latestData.dividend || 0;
     const dividendGrowthRate = this.data.assumptions.dividendGrowthRate;
     const requiredReturn = this.calculateCostOfEquity();
+    
+    // Check if company pays dividends
+    if (currentDividend <= 0 || !currentDividend) {
+      return {
+        method: 'DDM (Gordon Growth)',
+        valuePerShare: 0,
+        currentPrice: this.data.marketData.currentPrice,
+        upside: 0,
+        notApplicable: true,
+        reason: 'DDM not applicable - company does not pay dividends. Consider using DCF, relative valuation, or earnings-based methods instead.',
+        assumptions: {
+          currentDividend: 0,
+          dividendGrowthRate,
+          requiredReturn,
+          nextYearDividend: 0
+        }
+      };
+    }
+    
+    // Check for reasonable dividend growth rate
+    if (dividendGrowthRate >= requiredReturn) {
+      return {
+        method: 'DDM (Gordon Growth)',
+        valuePerShare: 0,
+        currentPrice: this.data.marketData.currentPrice,
+        upside: 0,
+        notApplicable: true,
+        reason: `DDM not applicable - dividend growth rate (${(dividendGrowthRate * 100).toFixed(1)}%) exceeds required return (${(requiredReturn * 100).toFixed(1)}%)`,
+        assumptions: {
+          currentDividend,
+          dividendGrowthRate,
+          requiredReturn,
+          nextYearDividend: 0
+        }
+      };
+    }
     
     // Gordon Growth Model: P = D1 / (r - g)
     const nextYearDividend = currentDividend * (1 + dividendGrowthRate);
@@ -363,6 +399,7 @@ class ValuationCalculator {
     const marketCap = this.data.marketData.marketCap;
     const debtToEquity = this.data.keyRatios.leverageRatios.debtToEquity;
     const beta = this.data.marketData.beta;
+    const currentDividend = latestData.dividend || 0;
     
     // Base weights (conservative approach)
     let weights = {
@@ -375,23 +412,57 @@ class ValuationCalculator {
       capitalizedEarnings: 0.05
     };
 
+    // Handle non-dividend paying companies
+    if (currentDividend <= 0 || ddmResult.notApplicable) {
+      // Redistribute DDM weight to DCF and relative valuation methods
+      const ddmWeight = weights.ddm;
+      weights.ddm = 0;
+      weights.fcfe += ddmWeight * 0.4; // Give more weight to FCFE
+      weights.fcff += ddmWeight * 0.3; // Some to FCFF
+      weights.peRelative += ddmWeight * 0.2; // Some to P/E relative
+      weights.evEbitda += ddmWeight * 0.1; // Remainder to EV/EBITDA
+    }
+
     // Industry-specific adjustments
     if (industry.includes("Heavy Construction") || industry.includes("Farm") || industry.includes("Machinery")) {
       // Asset-heavy cyclical business - increase asset-based and relative methods
       weights.fcfe = 0.20; // Reduce DCF weight due to cyclicality
       weights.fcff = 0.20;
-      weights.ddm = 0.10; // Lower dividend weight for cyclical
+      weights.ddm = currentDividend > 0 ? 0.10 : 0; // Lower dividend weight for cyclical
       weights.peRelative = 0.20; // Increase relative valuation
       weights.evEbitda = 0.15; // Important for industrial companies
       weights.bookValue = 0.10; // Higher asset-based weight
       weights.capitalizedEarnings = 0.05;
+      
+      // Redistribute if DDM not applicable
+      if (currentDividend <= 0) {
+        weights.evEbitda += 0.05; // Extra weight to operational valuation
+        weights.peRelative += 0.05;
+      }
+    }
+
+    // Growth company adjustments (typically non-dividend payers)
+    if (industry.includes("Technology") || industry.includes("Software") || industry.includes("Internet")) {
+      // Tech/growth companies - emphasize DCF and growth-based metrics
+      weights.fcfe += 0.10;
+      weights.peRelative += 0.05;
+      weights.evEbitda += 0.05;
+      weights.ddm = currentDividend > 0 ? weights.ddm : 0;
+      weights.bookValue -= 0.03; // Less relevant for asset-light businesses
+      weights.capitalizedEarnings -= 0.02;
+      
+      // For high-growth tech companies, reduce emphasis on traditional metrics
+      if (beta > 1.5) {
+        weights.capitalizedEarnings = Math.max(0.02, weights.capitalizedEarnings - 0.03);
+        weights.fcfe += 0.03;
+      }
     }
 
     // Company size adjustments
     if (marketCap > 100000000000) { // Large cap (>$100B)
       // Mature large companies - emphasize earnings stability
       weights.capitalizedEarnings += 0.05;
-      weights.ddm += 0.05;
+      if (currentDividend > 0) weights.ddm += 0.05;
       weights.fcfe -= 0.05;
       weights.fcff -= 0.05;
     }
@@ -703,14 +774,24 @@ class ValuationCalculator {
 
   assessFinancialRisk(ratios) {
     let score = 0;
-    if (ratios.leverageRatios.debtToEquity > 3) score += 2;
-    else if (ratios.leverageRatios.debtToEquity > 2) score += 1;
+    const debtToEquity = ratios.leverageRatios.debtToEquity;
+    const currentRatio = ratios.liquidityRatios.currentRatio;
+    const interestCoverage = ratios.leverageRatios.interestCoverage;
     
-    if (ratios.liquidityRatios.currentRatio < 1) score += 2;
-    else if (ratios.liquidityRatios.currentRatio < 1.2) score += 1;
+    // Handle debt to equity (may be null for companies with negative equity)
+    if (debtToEquity !== null && debtToEquity !== undefined) {
+      if (debtToEquity > 3) score += 2;
+      else if (debtToEquity > 2) score += 1;
+    } else {
+      // Negative equity is a significant risk factor
+      score += 3;
+    }
     
-    if (ratios.leverageRatios.interestCoverage < 5) score += 2;
-    else if (ratios.leverageRatios.interestCoverage < 10) score += 1;
+    if (currentRatio && currentRatio < 1) score += 2;
+    else if (currentRatio && currentRatio < 1.2) score += 1;
+    
+    if (interestCoverage && interestCoverage < 5) score += 2;
+    else if (interestCoverage && interestCoverage < 10) score += 1;
     
     if (score >= 4) return 'High';
     if (score >= 2) return 'Medium';

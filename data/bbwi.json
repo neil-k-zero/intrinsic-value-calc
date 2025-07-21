@@ -1,0 +1,416 @@
+{
+  "ticker": "BBWI",
+  "companyName": "Bath & Body Works, Inc.",
+  "industry": "Specialty Retail",
+  "sector": "Consumer Discretionary",
+  "exchange": "NYSE",
+  "lastUpdated": "2025-07-20",
+  "currency": "USD",
+  "currencyNote": "All financial data is in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Data is in USD, no conversion needed"
+  },
+  
+  "marketData": {
+    "currentPrice": 31.78,
+    "currentPriceCurrency": "USD",
+    "marketCap": 6730000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 11070000000,
+    "sharesOutstanding": 211610000,
+    "beta": 1.69,
+    "52WeekLow": 24.94,
+    "52WeekHigh": 41.87,
+    "priceTarget": 41.76,
+    "analystRating": "Buy",
+    "dataAsOf": "2025-07-18",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.02
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 7347000000,
+      "grossProfit": 3274000000,
+      "operatingIncome": 1288000000,
+      "netIncome": 816000000,
+      "freeCashFlow": 781000000,
+      "operatingCashFlow": 998000000,
+      "capex": 217000000,
+      "totalAssets": 4881000000,
+      "totalDebt": 4982000000,
+      "cashAndEquivalents": 636000000,
+      "shareholdersEquity": -1450000000,
+      "bookValuePerShare": -6.84,
+      "eps": 3.74,
+      "dividend": 0.80,
+      "workingCapital": 526000000,
+      "totalEquity": -1450000000,
+      "retainedEarnings": -1633000000,
+      "period": "Trailing Twelve Months as of 2025-05-29",
+      "reportingDate": "2025-05-29",
+      "currency": "USD"
+    },
+    "2024": {
+      "revenue": 7307000000,
+      "grossProfit": 3234000000,
+      "operatingIncome": 1266000000,
+      "netIncome": 798000000,
+      "freeCashFlow": 660000000,
+      "operatingCashFlow": 886000000,
+      "capex": 226000000,
+      "totalAssets": 4872000000,
+      "totalDebt": 4959000000,
+      "cashAndEquivalents": 674000000,
+      "shareholdersEquity": -1383000000,
+      "bookValuePerShare": -6.41,
+      "eps": 3.61,
+      "dividend": 0.80,
+      "workingCapital": 592000000,
+      "totalEquity": -1383000000,
+      "retainedEarnings": -1578000000,
+      "currency": "USD"
+    },
+    "2023": {
+      "revenue": 7429000000,
+      "grossProfit": 3236000000,
+      "operatingIncome": 1285000000,
+      "netIncome": 878000000,
+      "freeCashFlow": 656000000,
+      "operatingCashFlow": 954000000,
+      "capex": 298000000,
+      "totalAssets": 5463000000,
+      "totalDebt": 5573000000,
+      "cashAndEquivalents": 1084000000,
+      "shareholdersEquity": -1626000000,
+      "bookValuePerShare": -7.23,
+      "eps": 3.84,
+      "dividend": 0.80,
+      "workingCapital": 826000000,
+      "totalEquity": -1626000000,
+      "retainedEarnings": -1838000000,
+      "currency": "USD"
+    },
+    "2022": {
+      "revenue": 7560000000,
+      "grossProfit": 3255000000,
+      "operatingIncome": 1376000000,
+      "netIncome": 800000000,
+      "freeCashFlow": 816000000,
+      "operatingCashFlow": 1144000000,
+      "capex": 328000000,
+      "totalAssets": 5494000000,
+      "totalDebt": 6053000000,
+      "cashAndEquivalents": 1232000000,
+      "shareholdersEquity": -2205000000,
+      "bookValuePerShare": -9.63,
+      "eps": 3.43,
+      "dividend": 0.80,
+      "workingCapital": 887000000,
+      "totalEquity": -2205000000,
+      "retainedEarnings": -2401000000,
+      "currency": "USD"
+    },
+    "2021": {
+      "revenue": 7882000000,
+      "grossProfit": 3855000000,
+      "operatingIncome": 2009000000,
+      "netIncome": 1333000000,
+      "freeCashFlow": 1222000000,
+      "operatingCashFlow": 1492000000,
+      "capex": 270000000,
+      "totalAssets": 6026000000,
+      "totalDebt": 6013000000,
+      "cashAndEquivalents": 1979000000,
+      "shareholdersEquity": -1517000000,
+      "bookValuePerShare": -5.98,
+      "eps": 4.89,
+      "dividend": 0.45,
+      "workingCapital": 1719000000,
+      "totalEquity": -1517000000,
+      "retainedEarnings": -1803000000,
+      "currency": "USD"
+    },
+    "2020": {
+      "revenue": 6434000000,
+      "grossProfit": 3350000000,
+      "operatingIncome": 1858000000,
+      "netIncome": 844000000,
+      "freeCashFlow": 1811000000,
+      "operatingCashFlow": 2039000000,
+      "capex": 228000000,
+      "totalAssets": 11571000000,
+      "totalDebt": 7481000000,
+      "cashAndEquivalents": 3568000000,
+      "shareholdersEquity": -661000000,
+      "bookValuePerShare": -2.38,
+      "eps": 3.00,
+      "dividend": 0.30,
+      "workingCapital": 2753000000,
+      "totalEquity": -661000000,
+      "retainedEarnings": -1421000000,
+      "currency": "USD"
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.4456,
+      "operatingMargin": 0.1753,
+      "netMargin": 0.1111,
+      "roe": 0.5628,
+      "roa": 0.1594,
+      "roic": 0.2201
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.41,
+      "quickRatio": 0.57,
+      "cashRatio": 0.49
+    },
+    "leverageRatios": {
+      "debtToEquity": -3.44,
+      "debtToAssets": 1.02,
+      "interestCoverage": 4.28,
+      "debtToEbitda": 2.51
+    },
+    "valuationRatios": {
+      "peRatio": 8.49,
+      "forwardPE": 8.93,
+      "pbRatio": -4.65,
+      "psRatio": 0.94,
+      "evToEbitda": 7.08,
+      "evToSales": 1.51,
+      "pegRatio": 0.74,
+      "priceToFcf": 8.61
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 1.46,
+      "inventoryTurnover": 4.84,
+      "receivablesTurnover": 71.33
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-05-29"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": -0.0164,
+    "epsGrowth5Y": 0.0787,
+    "fcfGrowth5Y": -0.1961,
+    "dividendGrowth5Y": 0.2667,
+    "dividendGrowthStreak": 0
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 0.80,
+    "currentAnnualDividendUSD": 0.80,
+    "currentDividendYield": 0.0252,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.2136,
+    "dividendGrowthRate": 0.00,
+    "consecutiveYearsOfGrowth": 0,
+    "buybackYield": 0.0428,
+    "shareholderYield": 0.0679,
+    "nextExDividendDate": "2025-08-23",
+    "nextPaymentDate": "2025-09-06",
+    "dividendPolicy": "Quarterly dividend payments with focus on returning cash to shareholders",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "Dividends paid in USD",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q3",
+            "exDate": "2025-08-23",
+            "payDate": "2025-09-06",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q2", 
+            "exDate": "2025-06-06",
+            "payDate": "2025-06-20",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2025-02-21",
+            "payDate": "2025-03-07",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.80,
+        "annualTotalUSD": 0.80
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2024-11-22",
+            "payDate": "2024-12-06", 
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2024-08-23",
+            "payDate": "2024-09-06",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2024-06-07",
+            "payDate": "2024-06-21",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2024-02-22",
+            "payDate": "2024-03-08",
+            "amount": 0.20,
+            "amountUSD": 0.20,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 0.80,
+        "annualTotalUSD": 0.80
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.00,
+      "growthRate3Y": 0.00,
+      "growthRate5Y": 0.2667,
+      "growthRate10Y": 0.2667,
+      "compoundAnnualGrowthRate": 0.2667,
+      "averageAnnualIncrease": 0.10,
+      "consecutiveIncreases": 0,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 4.68,
+      "freeCashFlowCoverage": 4.46,
+      "debtServiceCoverage": 3.32,
+      "dividendToFcfRatio": 0.22,
+      "retentionRatio": 0.79,
+      "sustainableDividendGrowth": 0.12,
+      "impliedGrowthRate": 0.08
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.02,
+      "industryAveragePayoutRatio": 0.30,
+      "industryAverageGrowthRate": 0.05,
+      "relativeYieldRanking": "Above",
+      "relativeGrowthRanking": "Below",
+      "reliabilityRanking": "Good"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 15.0,
+    "averagePB": 2.5,
+    "averageROE": 0.15,
+    "averageDebtToEquity": 0.8,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.02
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.2273,
+    "reinvestmentRate": 0.30,
+    "dividendGrowthRate": 0.03,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.25,
+      "minimumPayoutRatio": 0.20,
+      "maximumPayoutRatio": 0.35,
+      "expectedDividendGrowth": 0.03,
+      "conservativeDividendGrowth": 0.02,
+      "optimisticDividendGrowth": 0.05,
+      "sustainabilityThreshold": 0.60,
+      "cyclicalAdjustment": true,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Primary alongside dividend",
+      "specialDividendPotential": false,
+      "currencyHedging": false,
+      "currencyNote": "USD-based operations, minimal currency exposure"
+    }
+  },
+
+  "businessSegments": {
+    "retail": {
+      "revenue": 6614000000,
+      "operatingIncome": 1158000000,
+      "description": "Bath & Body Works specialty retail stores in the US and Canada",
+      "growthRate": -0.02,
+      "marketPosition": "Leading specialty retailer of personal care and home fragrance products"
+    },
+    "international": {
+      "revenue": 733000000,
+      "operatingIncome": 130000000,
+      "description": "International operations through franchise and license partners",
+      "growthRate": 0.05,
+      "marketPosition": "Expanding international presence through partnerships"
+    }
+  },
+
+  "geographicRevenue": {
+    "northAmerica": {
+      "revenue": 6614000000,
+      "percentage": 0.90,
+      "growthRate": -0.02,
+      "description": "United States and Canada operations"
+    },
+    "international": {
+      "revenue": 733000000,
+      "percentage": 0.10,
+      "growthRate": 0.05,
+      "description": "International markets through franchise and license agreements"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Leading specialty retailer of personal care and home fragrance products with strong brand recognition",
+    "keyProducts": ["3-wick candles", "body care products", "fine fragrance mists", "hand soaps", "wallflowers", "seasonal collections"],
+    "competitiveAdvantages": [
+      "Strong brand equity and customer loyalty",
+      "Extensive retail footprint with prime mall locations",
+      "Innovative product development and seasonal collections",
+      "Effective marketing and promotional strategies",
+      "Strong digital and e-commerce capabilities",
+      "Operational efficiency and supply chain management"
+    ],
+    "risks": [
+      "Consumer discretionary spending sensitivity",
+      "Competition from other specialty retailers and mass market brands",
+      "Mall traffic decline and retail real estate challenges",
+      "Supply chain disruption and inflation pressures",
+      "Changing consumer preferences and shopping behaviors",
+      "International expansion execution risks"
+    ]
+  }
+}
