@@ -1,0 +1,438 @@
+{
+  "ticker": "COST",
+  "companyName": "Costco Wholesale Corporation",
+  "industry": "Discount Stores",
+  "sector": "Consumer Staples",
+  "exchange": "NASDAQ",
+  "lastUpdated": "2025-07-24",
+  "currency": "USD",
+  "currencyNote": "All financial data is reported in USD",
+  "exchangeRate": {
+    "usdToLocal": 1.0,
+    "localToUsd": 1.0,
+    "note": "Primary reporting currency is USD"
+  },
+  
+  "marketData": {
+    "currentPrice": 941.19,
+    "currentPriceCurrency": "USD",
+    "marketCap": 417400000000,
+    "marketCapCurrency": "USD",
+    "enterpriseValue": 410900000000,
+    "sharesOutstanding": 443480000,
+    "beta": 0.96,
+    "52WeekLow": 793.00,
+    "52WeekHigh": 1078.24,
+    "priceTarget": 1047.54,
+    "analystRating": "Buy",
+    "dataAsOf": "2025-07-23",
+    "note": "Market data includes TTM financial metrics for most accurate valuation"
+  },
+
+  "riskFactors": {
+    "riskFreeRate": 0.045,
+    "marketRiskPremium": 0.06,
+    "equityRiskPremium": 0.0828,
+    "countryRiskPremium": 0.0,
+    "smallCompanyPremium": 0.0,
+    "specificRiskPremium": 0.005
+  },
+
+  "financialHistory": {
+    "TTM": {
+      "revenue": 268776000000,
+      "grossProfit": 34339000000,
+      "operatingIncome": 10084000000,
+      "netIncome": 7843000000,
+      "freeCashFlow": 7317000000,
+      "operatingCashFlow": 12426000000,
+      "capex": -5109000000,
+      "totalAssets": 75482000000,
+      "totalDebt": 8358000000,
+      "cashAndEquivalents": 14850000000,
+      "shareholdersEquity": 27125000000,
+      "bookValuePerShare": 61.16,
+      "eps": 17.63,
+      "dividend": 5.20,
+      "workingCapital": 572000000,
+      "totalEquity": 27125000000,
+      "retainedEarnings": 20890000000,
+      "period": "Trailing Twelve Months as of 2025-07-23",
+      "reportingDate": "2025-05-29",
+      "currency": "USD"
+    },
+    "2024": {
+      "revenue": 254453000000,
+      "grossProfit": 32095000000,
+      "operatingIncome": 9285000000,
+      "netIncome": 7367000000,
+      "freeCashFlow": 6629000000,
+      "operatingCashFlow": 11339000000,
+      "capex": -4710000000,
+      "totalAssets": 69831000000,
+      "totalDebt": 9949000000,
+      "cashAndEquivalents": 11144000000,
+      "shareholdersEquity": 23622000000,
+      "bookValuePerShare": 53.31,
+      "eps": 16.56,
+      "dividend": 4.36,
+      "workingCapital": -1218000000,
+      "totalEquity": 23622000000,
+      "retainedEarnings": 17619000000,
+      "currency": "USD"
+    },
+    "2023": {
+      "revenue": 242290000000,
+      "grossProfit": 30095000000,
+      "operatingIncome": 8505000000,
+      "netIncome": 6292000000,
+      "freeCashFlow": 6745000000,
+      "operatingCashFlow": 11068000000,
+      "capex": -4323000000,
+      "totalAssets": 68994000000,
+      "totalDebt": 10536000000,
+      "cashAndEquivalents": 15234000000,
+      "shareholdersEquity": 25058000000,
+      "bookValuePerShare": 56.59,
+      "eps": 14.16,
+      "dividend": 3.84,
+      "workingCapital": 2296000000,
+      "totalEquity": 25058000000,
+      "retainedEarnings": 19521000000,
+      "currency": "USD"
+    },
+    "2022": {
+      "revenue": 226954000000,
+      "grossProfit": 27572000000,
+      "operatingIncome": 7911000000,
+      "netIncome": 5844000000,
+      "freeCashFlow": 3501000000,
+      "operatingCashFlow": 7392000000,
+      "capex": -3891000000,
+      "totalAssets": 64166000000,
+      "totalDebt": 10906000000,
+      "cashAndEquivalents": 11049000000,
+      "shareholdersEquity": 20647000000,
+      "bookValuePerShare": 46.63,
+      "eps": 13.14,
+      "dividend": 3.38,
+      "workingCapital": 698000000,
+      "totalEquity": 20647000000,
+      "retainedEarnings": 15585000000,
+      "currency": "USD"
+    },
+    "2021": {
+      "revenue": 195929000000,
+      "grossProfit": 25245000000,
+      "operatingIncome": 6792000000,
+      "netIncome": 5007000000,
+      "freeCashFlow": 5370000000,
+      "operatingCashFlow": 8958000000,
+      "capex": -3588000000,
+      "totalAssets": 59268000000,
+      "totalDebt": 11407000000,
+      "cashAndEquivalents": 12175000000,
+      "shareholdersEquity": 18078000000,
+      "bookValuePerShare": 39.75,
+      "eps": 11.27,
+      "dividend": 2.98,
+      "workingCapital": 64000000,
+      "totalEquity": 18078000000,
+      "retainedEarnings": 11666000000,
+      "currency": "USD"
+    },
+    "2020": {
+      "revenue": 166761000000,
+      "grossProfit": 21822000000,
+      "operatingIncome": 5435000000,
+      "netIncome": 4002000000,
+      "freeCashFlow": 6051000000,
+      "operatingCashFlow": 8861000000,
+      "capex": -2810000000,
+      "totalAssets": 55556000000,
+      "totalDebt": 11086000000,
+      "cashAndEquivalents": 13305000000,
+      "shareholdersEquity": 18705000000,
+      "bookValuePerShare": 41.44,
+      "eps": 9.02,
+      "dividend": 2.70,
+      "workingCapital": 3276000000,
+      "totalEquity": 18705000000,
+      "retainedEarnings": 12879000000,
+      "currency": "USD"
+    }
+  },
+
+  "keyRatios": {
+    "profitabilityRatios": {
+      "grossMargin": 0.1278,
+      "operatingMargin": 0.0375,
+      "netMargin": 0.0292,
+      "roe": 0.3208,
+      "roa": 0.0879,
+      "roic": 0.1894
+    },
+    "liquidityRatios": {
+      "currentRatio": 1.01,
+      "quickRatio": 0.47,
+      "cashRatio": 0.40
+    },
+    "leverageRatios": {
+      "debtToEquity": 0.31,
+      "debtToAssets": 0.11,
+      "interestCoverage": 64.23,
+      "debtToEbitda": 0.65
+    },
+    "valuationRatios": {
+      "peRatio": 53.39,
+      "forwardPE": 48.50,
+      "pbRatio": 15.39,
+      "psRatio": 1.55,
+      "evToEbitda": 33.03,
+      "evToSales": 1.53,
+      "pegRatio": 5.33,
+      "priceToFcf": 57.04
+    },
+    "efficiencyRatios": {
+      "assetTurnover": 3.75,
+      "inventoryTurnover": 13.01,
+      "receivablesTurnover": 93.50
+    },
+    "dataNote": "Ratios based on TTM data as of 2025-07-23"
+  },
+
+  "growthMetrics": {
+    "revenueGrowth5Y": 0.0820,
+    "epsGrowth5Y": 0.1150,
+    "fcfGrowth5Y": 0.0380,
+    "dividendGrowth5Y": 0.1130,
+    "dividendGrowthStreak": 21
+  },
+
+  "dividendInfo": {
+    "currentAnnualDividend": 5.20,
+    "currentAnnualDividendUSD": 5.20,
+    "currentDividendYield": 0.0055,
+    "payoutFrequency": "Quarterly",
+    "payoutRatio": 0.2791,
+    "dividendGrowthRate": 0.1327,
+    "consecutiveYearsOfGrowth": 21,
+    "buybackYield": -0.0007,
+    "shareholderYield": 0.0049,
+    "nextExDividendDate": "2025-08-01",
+    "nextPaymentDate": "2025-08-15",
+    "dividendPolicy": "Regular quarterly dividend with annual increases and occasional special dividends",
+    "aristocratStatus": false,
+    "aristocratSince": 0,
+    "currencyNote": "All dividend amounts in USD",
+    "recentDividendHistory": [
+      {
+        "year": 2025,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2025-08-01",
+            "payDate": "2025-08-15",
+            "amount": 1.30,
+            "amountUSD": 1.30,
+            "status": "upcoming"
+          },
+          {
+            "quarter": "Q3", 
+            "exDate": "2025-05-02",
+            "payDate": "2025-05-16",
+            "amount": 1.30,
+            "amountUSD": 1.30,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2025-02-07", 
+            "payDate": "2025-02-21",
+            "amount": 1.16,
+            "amountUSD": 1.16,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2024-11-01",
+            "payDate": "2024-11-15",
+            "amount": 1.16,
+            "amountUSD": 1.16,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 4.92,
+        "annualTotalUSD": 4.92
+      },
+      {
+        "year": 2024,
+        "quarters": [
+          {
+            "quarter": "Q4",
+            "exDate": "2024-07-26",
+            "payDate": "2024-08-09", 
+            "amount": 1.16,
+            "amountUSD": 1.16,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q3",
+            "exDate": "2024-04-25",
+            "payDate": "2024-05-10",
+            "amount": 1.16,
+            "amountUSD": 1.16,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q2",
+            "exDate": "2024-02-01",
+            "payDate": "2024-02-16",
+            "amount": 1.02,
+            "amountUSD": 1.02,
+            "status": "paid"
+          },
+          {
+            "quarter": "Q1",
+            "exDate": "2023-12-27",
+            "payDate": "2024-01-12",
+            "amount": 15.00,
+            "amountUSD": 15.00,
+            "status": "paid"
+          }
+        ],
+        "annualTotal": 18.34,
+        "annualTotalUSD": 18.34
+      }
+    ],
+    "dividendGrowthAnalysis": {
+      "growthRate1Y": 0.1327,
+      "growthRate3Y": 0.1120,
+      "growthRate5Y": 0.1130,
+      "growthRate10Y": 0.0850,
+      "compoundAnnualGrowthRate": 0.1130,
+      "averageAnnualIncrease": 0.1050,
+      "consecutiveIncreases": 21,
+      "lastCut": "Never",
+      "sustainabilityScore": "High"
+    },
+    "dividendMetrics": {
+      "earningsCoverage": 3.58,
+      "freeCashFlowCoverage": 2.82,
+      "debtServiceCoverage": 50.00,
+      "dividendToFcfRatio": 0.71,
+      "retentionRatio": 0.72,
+      "sustainableDividendGrowth": 0.23,
+      "impliedGrowthRate": 0.12
+    },
+    "peerComparison": {
+      "industryAverageDividendYield": 0.018,
+      "industryAveragePayoutRatio": 0.45,
+      "industryAverageGrowthRate": 0.06,
+      "relativeYieldRanking": "Below",
+      "relativeGrowthRanking": "Above",
+      "reliabilityRanking": "Excellent"
+    }
+  },
+
+  "industryBenchmarks": {
+    "averagePE": 25.0,
+    "averagePB": 4.5,
+    "averageROE": 0.18,
+    "averageDebtToEquity": 0.45,
+    "averageRevGrowth": 0.05,
+    "averageDividendYield": 0.018
+  },
+
+  "assumptions": {
+    "terminalGrowthRate": 0.025,
+    "growthPeriodYears": 10,
+    "fadeYears": 5,
+    "taxRate": 0.25,
+    "reinvestmentRate": 0.25,
+    "dividendGrowthRate": 0.08,
+    "perpetualGrowthRate": 0.025,
+    "dividendAssumptions": {
+      "targetPayoutRatio": 0.30,
+      "minimumPayoutRatio": 0.25,
+      "maximumPayoutRatio": 0.35,
+      "expectedDividendGrowth": 0.08,
+      "conservativeDividendGrowth": 0.05,
+      "optimisticDividendGrowth": 0.12,
+      "sustainabilityThreshold": 0.60,
+      "cyclicalAdjustment": true,
+      "variableDividendPolicy": false,
+      "shareRepurchasePriority": "Secondary to dividend",
+      "specialDividendPotential": true,
+      "currencyHedging": false,
+      "currencyNote": "USD-based operations with international exposure"
+    }
+  },
+
+  "businessSegments": {
+    "warehouse_operations": {
+      "revenue": 259090000000,
+      "operatingIncome": 9500000000,
+      "description": "Membership-based warehouse retail operations",
+      "growthRate": 0.0615,
+      "marketPosition": "Leading warehouse club retailer"
+    },
+    "membership_fees": {
+      "revenue": 4990000000,
+      "operatingIncome": 4990000000,
+      "description": "Annual membership fees from subscribers",
+      "growthRate": 0.0523,
+      "marketPosition": "High member loyalty and retention"
+    },
+    "gas_stations": {
+      "revenue": 15000000000,
+      "operatingIncome": 300000000,
+      "description": "Fuel sales at warehouse locations",
+      "growthRate": 0.04,
+      "marketPosition": "Competitive fuel pricing for members"
+    }
+  },
+
+  "geographicRevenue": {
+    "united_states": {
+      "revenue": 192000000000,
+      "percentage": 0.715,
+      "growthRate": 0.06,
+      "description": "Domestic US operations with 614 warehouses"
+    },
+    "canada": {
+      "revenue": 28000000000,
+      "percentage": 0.104,
+      "growthRate": 0.055,
+      "description": "Canadian operations"
+    },
+    "international_other": {
+      "revenue": 48776000000,
+      "percentage": 0.181,
+      "growthRate": 0.07,
+      "description": "Japan, Korea, Taiwan, Australia, Mexico, Spain, France, Iceland, New Zealand, Sweden, China"
+    }
+  },
+
+  "competitivePosition": {
+    "marketLeadership": "Leading membership-based warehouse club with strong customer loyalty and efficient operations",
+    "keyProducts": ["Kirkland Signature private label", "Bulk groceries", "Electronics", "Apparel", "Gas stations", "Pharmacy services", "Auto services"],
+    "competitiveAdvantages": [
+      "Membership-based model creates customer loyalty and predictable revenue",
+      "Low-cost operating model with high inventory turnover",
+      "Strong private label brand (Kirkland Signature) with high margins",
+      "Economies of scale in purchasing and distribution",
+      "Limited SKUs strategy reduces complexity and costs",
+      "Strong balance sheet with minimal debt",
+      "Consistent dividend growth track record"
+    ],
+    "risks": [
+      "Economic sensitivity affecting discretionary spending",
+      "Competition from other warehouse clubs and online retailers",
+      "Rising labor and supply chain costs",
+      "International expansion challenges",
+      "Dependence on membership renewal rates",
+      "Potential margin pressure from competitive pricing strategy"
+    ]
+  }
+}
