@@ -53,6 +53,19 @@ cd python
 python src/calculate.py --help
 ```
 
+### Quick Start
+
+```bash
+# Calculate Caterpillar (CAT) valuation
+python src/calculate.py CAT
+
+# Calculate Apple (AAPL) and save to file 
+python src/calculate.py AAPL --save
+
+# List all available companies
+python src/calculate.py --list
+```
+
 ### Calculate Company Value
 ```bash
 # Calculate using pre-loaded company data (default: CAT)
@@ -110,13 +123,19 @@ Confidence Level:  High
 .
 ├── python/                          # Python implementation
 │   ├── src/
-│   │   ├── valuation_calculator.py  # Core calculation engine
-│   │   └── calculate.py             # Command-line interface
+│   │   ├── calculate.py             # Command-line interface  
+│   │   ├── valuation_calculator_modular.py  # Main orchestrator
+│   │   ├── data/                    # Data processing modules
+│   │   ├── models/                  # Data models
+│   │   ├── valuation/               # Valuation methods
+│   │   ├── risk/                    # Risk analysis
+│   │   ├── utils/                   # Utility functions
+│   │   └── output/                  # Output formatting
 │   ├── tests/
 │   │   └── test_valuation_calculator.py  # Unit tests
 │   └── README.md                    # Detailed Python documentation
 ├── data/                            # Company financial data
-│   ├── cat.json                     # Caterpillar example
+│   ├── nvo.json                     # Novo Nordisk example
 │   ├── template.json                # Data structure template
 │   └── [ticker].json                # Additional companies
 └── README.md                        # This file
@@ -129,6 +148,20 @@ Confidence Level:  High
 - **Risk Assessment**: Comprehensive financial, business, and valuation risk analysis
 - **Professional Output**: Institutional-quality analysis reports
 - **Comprehensive Testing**: Full test suite ensuring calculation accuracy
+
+## How to ask AI agent for a company data file `ticker.json`
+
+Create a new company data file similar to template.json but for NVIDIA Corporation (NVDA) nvda.json. Use the company data creation guide as a reference on how to calculate and generate this data. Reference the following links for company and stock financial data, metrics, and rations:
+
+https://stockanalysis.com/stocks/nvda/
+https://stockanalysis.com/stocks/nvda/statistics/
+https://stockanalysis.com/stocks/nvda/financials/
+https://stockanalysis.com/stocks/nvda/financials/balance-sheet/
+https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/
+https://stockanalysis.com/stocks/nvda/financials/ratios/
+https://stockanalysis.com/stocks/nvda/revenue/
+https://stockanalysis.com/stocks/nvda/metrics/
+https://stockanalysis.com/stocks/nvda/market-cap/
 
 ## Investment Disclaimer
 

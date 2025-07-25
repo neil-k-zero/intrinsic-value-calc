@@ -80,12 +80,12 @@ python src/calculate.py --help
 ### Programmatic Usage
 
 ```python
-from src.valuation_calculator import ValuationCalculator
-import json
+from src.data.data_loader import DataLoader
+from src.valuation_calculator_modular import ValuationCalculator
 
-# Load company data
-with open('../data/cat.json', 'r') as f:
-    company_data = json.load(f)
+# Load company data using the modular data loader
+data_loader = DataLoader()
+company_data = data_loader.load_company_data('CAT')
 
 # Create calculator instance
 calculator = ValuationCalculator(company_data)
@@ -99,18 +99,39 @@ print(f"Upside: {results['upside']:.1f}%")
 print(f"Recommendation: {results['recommendation']}")
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 python/
-├── src/
-│   ├── valuation_calculator.py    # Main calculation engine
-│   └── calculate.py               # Command-line interface
+├── README.md                       # This file - Implementation guide
+├── requirements.txt                # Python dependencies
+├── src/                           # Main source code
+│   ├── calculate.py                # Command-line interface
+│   ├── valuation_calculator_modular.py  # Main orchestrator
+│   ├── data/                      # Data processing modules
+│   │   ├── data_loader.py         # Load and validate data
+│   │   ├── data_validator.py      # Data validation
+│   │   └── currency_converter.py  # Currency conversion
+│   ├── models/                    # Data models
+│   │   ├── company_data.py        # Company data structure
+│   │   ├── valuation_result.py    # Valuation results
+│   │   └── risk_metrics.py        # Risk assessment
+│   ├── valuation/                 # Valuation methods
+│   │   ├── dcf_valuation.py       # DCF models
+│   │   ├── relative_valuation.py  # Relative valuation
+│   │   ├── asset_valuation.py     # Asset-based methods
+│   │   └── earnings_valuation.py  # Earnings-based methods
+│   ├── risk/                      # Risk analysis
+│   │   └── risk_analyzer.py       # Risk assessment
+│   ├── utils/                     # Utility functions
+│   │   ├── financial_calculations.py
+│   │   └── math_utils.py
+│   └── output/                    # Output formatting
+│       ├── cli_printer.py         # CLI formatting
+│       └── result_formatter.py    # Result formatting
 ├── tests/
-│   └── test_valuation_calculator.py  # Unit tests (to be created)
-├── output/                        # Generated valuation reports
-├── requirements.txt               # Python dependencies
-└── README.md                      # This file
+│   └── test_valuation_calculator.py  # Unit tests
+└── output/                        # Generated valuation reports
 ```
 
 ## Data Format

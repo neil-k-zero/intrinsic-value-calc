@@ -3,7 +3,7 @@
 Unit tests for the ValuationCalculator class.
 
 This module contains test cases to verify the correctness of the valuation
-calculations and ensure the Python implementation works correctly.
+calculations and ensure the modular implementation works correctly.
 """
 
 import unittest
@@ -14,7 +14,9 @@ from pathlib import Path
 # Add the src directory to the path so we can import our modules
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
-from valuation_calculator import ValuationCalculator
+from data.data_loader import DataLoader
+from models.company_data import CompanyData
+from valuation_calculator_modular import ValuationCalculator
 
 
 class TestValuationCalculator(unittest.TestCase):
@@ -22,7 +24,8 @@ class TestValuationCalculator(unittest.TestCase):
     
     def setUp(self):
         """Set up test data for each test case."""
-        self.mock_data = {
+        # Create mock raw data dictionary
+        self.mock_raw_data = {
             'ticker': 'TEST',
             'companyName': 'Test Company',
             'industry': 'Technology',
@@ -83,19 +86,24 @@ class TestValuationCalculator(unittest.TestCase):
                 'averagePB': 3.5
             }
         }
-        self.calculator = ValuationCalculator(self.mock_data)
+        
+        # Convert to CompanyData object using DataLoader
+        data_loader = DataLoader()
+        self.company_data = data_loader._convert_raw_data_to_company_data(self.mock_raw_data)
+        self.calculator = ValuationCalculator(self.company_data)
     
     def test_initialization(self):
         """Test that the calculator initializes correctly."""
-        self.assertEqual(self.calculator.data['ticker'], 'TEST')
-        self.assertEqual(self.calculator.data['companyName'], 'Test Company')
-        self.assertIsNotNone(self.calculator.normalized_data)
+        self.assertEqual(self.company_data.ticker, 'TEST')
+        self.assertEqual(self.company_data.company_name, 'Test Company')
+        self.assertIsNotNone(self.calculator.company_data)
     
     def test_currency_conversion(self):
-        """Test currency conversion functionality."""
-        # Test USD data (should remain unchanged)
-        usd_data = self.calculator._convert_to_usd(self.mock_data)
-        self.assertEqual(usd_data, self.mock_data)
+        """Test currency conversion functionality - data should be in USD."""
+        # With modular system, data is pre-converted to USD in CompanyData
+        ttm_data = self.company_data.financial_history.get('2024')
+        self.assertIsNotNone(ttm_data)
+        self.assertGreater(ttm_data.revenue, 0)
         
         # Test DKK conversion
         dkk_data = self.mock_data.copy()
