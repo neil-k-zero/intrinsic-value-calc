@@ -30,7 +30,7 @@ def main():
     
     # Check original calculator's EV/EBITDA calculation
     original_calc = OriginalCalculator(raw_data)
-    ev_ebitda_result = original_calc.calculate_ev_ebitda_valuation()
+    ev_ebitda_result = original_calc.calculate_relative_valuation()['evEbitdaValuation']
     
     print(f"\n=== ORIGINAL EV/EBITDA RESULT ===")
     print(f"Value per share: {ev_ebitda_result.get('valuePerShare', 'N/A')}")

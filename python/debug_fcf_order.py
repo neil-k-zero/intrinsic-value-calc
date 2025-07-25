@@ -27,9 +27,10 @@ def main():
     for year, value in fcf_series.items():
         print(f"  {year}: {value:,.2f}")
     
-    # Get the values as a list (this is what goes to CAGR calculation)
+    # Get the values as a list and reverse for chronological order
     fcf_values = [value for value in fcf_series.values() if value is not None]
-    print(f"\nFCF Values for CAGR: {fcf_values}")
+    fcf_values.reverse()
+    print(f"\nFCF Values for CAGR (chronological): {fcf_values}")
     
     # Calculate CAGR
     calc = FinancialCalculations(company_data)
