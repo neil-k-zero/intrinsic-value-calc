@@ -1,6 +1,6 @@
 # Company Value Calculator
 
-A comprehensive intrinsic value calculator that uses multiple valuation methods to determine a company's fair value. This tool implements industry-standard approaches including DCF models, relative valuation, and asset-based methods.
+A comprehensive intrinsic value calculator implemented in **Python** that uses multiple valuation methods to determine a company's fair value. This tool implements industry-standard approaches including DCF models, relative valuation, and asset-based methods.
 
 ## Features
 
@@ -8,7 +8,7 @@ A comprehensive intrinsic value calculator that uses multiple valuation methods 
 
 #### 1. Discounted Cash Flow (DCF) Models
 - **Free Cash Flow to Equity (FCFE)**: Projects future free cash flows to equity holders
-- **Free Cash Flow to Firm (FCFF)**: Values the entire firm then subtracts debt
+- **Free Cash Flow to Firm (FCFF)**: Values the entire firm then subtracts debt  
 - **Dividend Discount Model (DDM)**: For dividend-paying stocks with Gordon Growth Model
 
 #### 2. Relative Valuation Methods
@@ -26,27 +26,50 @@ A comprehensive intrinsic value calculator that uses multiple valuation methods 
 - **Capitalized Earnings**: Normalized earnings approach
 - **Earnings Power Value**: Sustainable earnings without growth assumptions
 
+## Quick Start
+
+### Prerequisites
+- Python 3.7 or higher
+- No external dependencies required (uses Python standard library)
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/company-value-calculator.git
+cd company-value-calculator
+
+# Navigate to Python implementation
+cd python
+
+# Run a sample calculation
+python src/calculate.py
+```
+
 ## Usage
 
 ### Quick Start
 ```bash
-npm install
-npm start
+cd python
+python src/calculate.py --help
 ```
 
 ### Calculate Company Value
 ```bash
-# Calculate using pre-loaded company data
-npm run calculate
+# Calculate using pre-loaded company data (default: CAT)
+python src/calculate.py
 
-# Or run specific calculations
-node src/calculate.js CAT
+# Calculate specific companies
+python src/calculate.py CAT
+python src/calculate.py AAPL --save
+
+# List all available companies
+python src/calculate.py --list
 ```
 
 ### Add New Company Data
 1. Create a new JSON file in `data/` directory (e.g., `aapl.json`)
 2. Follow the data structure format shown in `data/cat.json`
-3. Run calculations: `node src/calculate.js AAPL`
+3. Run calculations: `python src/calculate.py AAPL`
 
 ## Data Structure
 
@@ -56,6 +79,8 @@ Each company data file should include:
 - Market data (beta, risk-free rate, market risk premium)
 - Growth assumptions and industry benchmarks
 
+See `data/cat.json` for a complete example and `data/template.json` for the required structure.
+
 ## Example Output
 
 The calculator provides:
@@ -64,6 +89,46 @@ The calculator provides:
 - **Risk assessment** and confidence intervals
 - **Detailed breakdown** of each valuation method
 - **Recommendation** (Buy/Hold/Sell) with margin of safety
+
+```
+================================================================================
+      INTRINSIC VALUE ANALYSIS: Caterpillar Inc. (CAT)
+================================================================================
+
+📊 EXECUTIVE SUMMARY
+Current Price:     $413.71
+Intrinsic Value:   $222.64
+Potential Upside:  -46.2%
+Margin of Safety:  6.2%
+Recommendation:    Sell
+Confidence Level:  High
+```
+
+## Project Structure
+
+```
+.
+├── python/                          # Python implementation
+│   ├── src/
+│   │   ├── valuation_calculator.py  # Core calculation engine
+│   │   └── calculate.py             # Command-line interface
+│   ├── tests/
+│   │   └── test_valuation_calculator.py  # Unit tests
+│   └── README.md                    # Detailed Python documentation
+├── data/                            # Company financial data
+│   ├── cat.json                     # Caterpillar example
+│   ├── template.json                # Data structure template
+│   └── [ticker].json                # Additional companies
+└── README.md                        # This file
+```
+
+## Advanced Features
+
+- **Industry-Specific Weighting**: Automatically adjusts valuation method weights based on company sector
+- **Currency Support**: Handles international companies with automatic USD conversion
+- **Risk Assessment**: Comprehensive financial, business, and valuation risk analysis
+- **Professional Output**: Institutional-quality analysis reports
+- **Comprehensive Testing**: Full test suite ensuring calculation accuracy
 
 ## Investment Disclaimer
 

@@ -4,6 +4,9 @@ Company Value Calculator - Command Line Interface
 
 This script provides a command-line interface for calculating intrinsic values
 of companies using multiple valuation methods.
+
+IMPORTANT: This is the original monolithic implementation. 
+For the new modular design, see calculate_modular.py and the modular/ directory.
 """
 
 import json

@@ -7,19 +7,20 @@ This comprehensive company valuation system implements multiple industry-standar
 ### Core Components
 
 ```
-src/
-├── ValuationCalculator.js    # Main calculation engine
-├── calculate.js             # Command-line interface
-├── app.js                   # Web API server
-└── companyBuilder.js        # Data management utility
+python/
+├── src/
+│   ├── valuation_calculator.py  # Main calculation engine
+│   └── calculate.py             # Command-line interface
+├── tests/
+│   └── test_valuation_calculator.py  # Comprehensive test suite
+├── output/                      # Generated valuation reports
+├── requirements.txt             # Python dependencies
+└── README.md                    # Python implementation guide
 
 data/
 ├── cat.json                 # Caterpillar financial data
 ├── template.json            # Template for new companies
 └── [ticker].json            # Additional company files
-
-tests/
-└── ValuationCalculator.test.js  # Comprehensive test suite
 ```
 
 ## Valuation Methods Implemented
@@ -137,40 +138,42 @@ The system calculates a weighted average intrinsic value using:
 ### Command Line Analysis
 ```bash
 # Calculate Caterpillar intrinsic value
-npm run calculate
+cd python
+python src/calculate.py
 
 # Calculate specific company
-node src/calculate.js CAT
+python src/calculate.py CAT
 
 # List available companies
-npm run list-companies
+python src/calculate.py --list
 
-# Validate company data
-npm run validate CAT
+# Save results to file
+python src/calculate.py CAT --save
 ```
 
-### API Usage
-```bash
-# Get valuation via API
-curl http://localhost:3000/api/valuation/cat
+### Programmatic Usage
+```python
+from python.src.valuation_calculator import ValuationCalculator
+import json
 
-# Batch analysis
-curl -X POST http://localhost:3000/api/valuation/batch \
-  -H "Content-Type: application/json" \
-  -d '{"tickers": ["CAT", "AAPL"]}'
+# Load company data
+with open('data/cat.json', 'r') as f:
+    company_data = json.load(f)
+
+# Calculate valuation
+calculator = ValuationCalculator(company_data)
+results = calculator.calculate_intrinsic_value()
 ```
 
 ### Adding New Companies
 ```bash
-# Create new company template
-npm run create-company AAPL
+# Create new company data file in data/ directory
+# Copy template.json and modify with company data
+cp data/template.json data/aapl.json
 
 # Edit data/aapl.json with financial data
-# Validate the data
-npm run validate AAPL
-
-# Calculate valuation
-node src/calculate.js AAPL
+# Run analysis
+python src/calculate.py AAPL
 ```
 
 ## Caterpillar Analysis Results

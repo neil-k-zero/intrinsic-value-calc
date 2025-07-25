@@ -3,7 +3,7 @@
 Unit tests for the ValuationCalculator class.
 
 This module contains test cases to verify the correctness of the valuation
-calculations and ensure the Python implementation matches the JavaScript logic.
+calculations and ensure the Python implementation works correctly.
 """
 
 import unittest

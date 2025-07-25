@@ -238,16 +238,16 @@ flake8 src/
 mypy src/
 ```
 
-## Differences from JavaScript Version
+## Technical Features
 
-The Python implementation maintains the same core logic and methodology as the JavaScript version but includes these improvements:
+This Python implementation includes several technical improvements:
 
 1. **Type Hints**: Full type annotations for better code documentation and IDE support
-2. **Error Handling**: More robust error handling and validation
-3. **Code Organization**: Better separation of concerns and modularity
-4. **Documentation**: Comprehensive docstrings and comments
-5. **Command Line Interface**: Enhanced CLI with argparse
-6. **No External Dependencies**: Uses only Python standard library for core functionality
+2. **Error Handling**: Comprehensive error handling and validation
+3. **Code Organization**: Clean separation of concerns and modularity
+4. **Documentation**: Detailed docstrings and comments throughout
+5. **Command Line Interface**: Professional CLI with argparse
+6. **Minimal Dependencies**: Uses only Python standard library for core functionality
 
 ## Disclaimer
 
