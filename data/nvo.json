@@ -1,412 +1,372 @@
 {
-  "ticker": "NVO",
-  "companyName": "Novo Nordisk A/S",
-  "industry": "Drug Manufacturers - General",
-  "sector": "Healthcare",
-  "exchange": "NYSE",
-  "lastUpdated": "2025-07-19",
-  "currency": "DKK",
-  "currencyNote": "Financial data is in Danish Kroner (DKK). Current exchange rate: 1 USD = ~6.9 DKK",
-  "exchangeRate": {
-    "usdToDkk": 6.9,
-    "dkkToUsd": 0.1449,
-    "note": "1 USD = 6.9 DKK, 1 DKK = 0.1449 USD"
-  },
-  
-  "marketData": {
-    "currentPrice": 64.31,
-    "currentPriceCurrency": "USD",
-    "marketCap": 287380000000,
-    "marketCapCurrency": "USD",
-    "enterpriseValue": 299430000000,
-    "sharesOutstanding": 4440000000,
-    "beta": 0.22,
-    "52WeekLow": 57.00,
-    "52WeekHigh": 139.74,
-    "priceTarget": 112.00,
-    "analystRating": "Buy",
-    "dataAsOf": "2025-07-18",
-    "note": "Market data includes TTM financial metrics. Company is Denmark-based with primary financial reporting in DKK"
-  },
-
-  "riskFactors": {
-    "riskFreeRate": 0.045,
-    "marketRiskPremium": 0.06,
-    "equityRiskPremium": 0.082,
-    "countryRiskPremium": 0.005,
-    "smallCompanyPremium": 0.0,
-    "specificRiskPremium": 0.015
-  },
-
-  "financialHistory": {
-    "TTM": {
-      "revenue": 303141000000,
-      "grossProfit": 256607000000,
-      "operatingIncome": 146824000000,
-      "netIncome": 104615000000,
-      "freeCashFlow": 79133000000,
-      "operatingCashFlow": 131245000000,
-      "capex": 52112000000,
-      "totalAssets": 489162000000,
-      "totalDebt": 118723000000,
-      "cashAndEquivalents": 41550000000,
-      "shareholdersEquity": 138540000000,
-      "bookValuePerShare": 31.21,
-      "eps": 23.51,
-      "dividend": 11.40,
-      "workingCapital": -61722000000,
-      "totalEquity": 138540000000,
-      "retainedEarnings": 137319000000,
-      "period": "Trailing Twelve Months as of Q2 2025",
-      "reportingDate": "2025-07-19",
-      "currency": "DKK"
+    "ticker": "NVO",
+    "companyName": "Novo Nordisk A/S",
+    "industry": "Drug Manufacturers - General",
+    "sector": "Healthcare",
+    "exchange": "NYSE",
+    "lastUpdated": "2025-07-25",
+    "currency": "USD",
+    "currencyNote": "Financial data converted from DKK to USD using average exchange rates. Primary reporting currency is DKK.",
+    "exchangeRate": {
+        "usdToLocal": 6.9,
+        "localToUsd": 0.145,
+        "note": "Approximate USD to DKK exchange rate as of July 2025. Original DKK values converted to USD for consistency."
     },
-    "2024": {
-      "revenue": 290403000000,
-      "grossProfit": 246843000000,
-      "operatingIncome": 139879000000,
-      "netIncome": 100988000000,
-      "freeCashFlow": 73804000000,
-      "operatingCashFlow": 120968000000,
-      "capex": 47164000000,
-      "totalAssets": 465795000000,
-      "totalDebt": 102787000000,
-      "cashAndEquivalents": 26308000000,
-      "shareholdersEquity": 143486000000,
-      "bookValuePerShare": 32.31,
-      "eps": 22.67,
-      "dividend": 11.40,
-      "workingCapital": -56631000000,
-      "totalEquity": 143486000000,
-      "retainedEarnings": 144448000000,
-      "currency": "DKK"
+    "marketData": {
+        "currentPrice": 71.02,
+        "currentPriceCurrency": "USD",
+        "marketCap": 313060000000,
+        "marketCapCurrency": "USD",
+        "enterpriseValue": 325230000000,
+        "sharesOutstanding": 4440000000,
+        "beta": 0.22,
+        "52WeekLow": 57.00,
+        "52WeekHigh": 139.74,
+        "priceTarget": 112.00,
+        "analystRating": "Buy",
+        "dataAsOf": "2025-07-25",
+        "note": "Market data based on NYSE trading as of July 25, 2025. TTM financial metrics used for valuation accuracy."
     },
-    "2023": {
-      "revenue": 232261000000,
-      "grossProfit": 196942000000,
-      "operatingIncome": 104698000000,
-      "netIncome": 83683000000,
-      "freeCashFlow": 83102000000,
-      "operatingCashFlow": 108908000000,
-      "capex": 25806000000,
-      "totalAssets": 314486000000,
-      "totalDebt": 27006000000,
-      "cashAndEquivalents": 30230000000,
-      "shareholdersEquity": 106561000000,
-      "bookValuePerShare": 23.90,
-      "eps": 18.67,
-      "dividend": 9.40,
-      "workingCapital": -30009000000,
-      "totalEquity": 106561000000,
-      "retainedEarnings": 104839000000,
-      "currency": "DKK"
+    "riskFactors": {
+        "riskFreeRate": 0.045,
+        "marketRiskPremium": 0.06,
+        "equityRiskPremium": 0.0553,
+        "countryRiskPremium": 0.0,
+        "smallCompanyPremium": 0.0,
+        "specificRiskPremium": 0.01
     },
-    "2022": {
-      "revenue": 176954000000,
-      "grossProfit": 148530000000,
-      "operatingIncome": 75618000000,
-      "netIncome": 55525000000,
-      "freeCashFlow": 66741000000,
-      "operatingCashFlow": 78887000000,
-      "capex": 12146000000,
-      "totalAssets": 241257000000,
-      "totalDebt": 25784000000,
-      "cashAndEquivalents": 23574000000,
-      "shareholdersEquity": 83486000000,
-      "bookValuePerShare": 18.55,
-      "eps": 12.26,
-      "dividend": 6.20,
-      "workingCapital": -12746000000,
-      "totalEquity": 83486000000,
-      "retainedEarnings": 80587000000,
-      "currency": "DKK"
+    "financialHistory": {
+        "TTM": {
+            "revenue": 43920000000,
+            "grossProfit": 37180000000,
+            "operatingIncome": 21270000000,
+            "netIncome": 15160000000,
+            "freeCashFlow": 12320000000,
+            "operatingCashFlow": 19020000000,
+            "capex": 7550000000,
+            "totalAssets": 70930000000,
+            "totalDebt": 17200000000,
+            "cashAndEquivalents": 6020000000,
+            "shareholdersEquity": 20070000000,
+            "bookValuePerShare": 4.52,
+            "eps": 3.40,
+            "dividend": 1.18,
+            "workingCapital": -8940000000,
+            "totalEquity": 20070000000,
+            "retainedEarnings": 19910000000,
+            "period": "Trailing Twelve Months as of July 2025",
+            "reportingDate": "2025-07-25",
+            "currency": "USD"
+        },
+        "2024": {
+            "revenue": 42110000000,
+            "grossProfit": 35790000000,
+            "operatingIncome": 20280000000,
+            "netIncome": 14640000000,
+            "freeCashFlow": 10700000000,
+            "operatingCashFlow": 17540000000,
+            "capex": 6840000000,
+            "totalAssets": 67540000000,
+            "totalDebt": 14900000000,
+            "cashAndEquivalents": 2270000000,
+            "shareholdersEquity": 20810000000,
+            "bookValuePerShare": 32.31,
+            "eps": 22.63,
+            "dividend": 11.40,
+            "workingCapital": -8210000000,
+            "totalEquity": 20810000000,
+            "retainedEarnings": 20940000000,
+            "currency": "USD"
+        },
+        "2023": {
+            "revenue": 33680000000,
+            "grossProfit": 28560000000,
+            "operatingIncome": 15180000000,
+            "netIncome": 12130000000,
+            "freeCashFlow": 12050000000,
+            "operatingCashFlow": 15790000000,
+            "capex": 3740000000,
+            "totalAssets": 45600000000,
+            "totalDebt": 3920000000,
+            "cashAndEquivalents": 4380000000,
+            "shareholdersEquity": 15450000000,
+            "bookValuePerShare": 23.90,
+            "eps": 18.62,
+            "dividend": 9.40,
+            "workingCapital": -4350000000,
+            "totalEquity": 15450000000,
+            "retainedEarnings": 15200000000,
+            "currency": "USD"
+        },
+        "2022": {
+            "revenue": 25660000000,
+            "grossProfit": 21550000000,
+            "operatingIncome": 10960000000,
+            "netIncome": 8050000000,
+            "freeCashFlow": 9680000000,
+            "operatingCashFlow": 11440000000,
+            "capex": 1760000000,
+            "totalAssets": 34980000000,
+            "totalDebt": 3740000000,
+            "cashAndEquivalents": 1830000000,
+            "shareholdersEquity": 12110000000,
+            "bookValuePerShare": 18.55,
+            "eps": 12.22,
+            "dividend": 6.20,
+            "workingCapital": -1850000000,
+            "totalEquity": 12110000000,
+            "retainedEarnings": 11690000000,
+            "currency": "USD"
+        },
+        "2021": {
+            "revenue": 20420000000,
+            "grossProfit": 16990000000,
+            "operatingIncome": 8590000000,
+            "netIncome": 6930000000,
+            "freeCashFlow": 7060000000,
+            "operatingCashFlow": 7980000000,
+            "capex": 920000000,
+            "totalAssets": 28200000000,
+            "totalDebt": 3860000000,
+            "cashAndEquivalents": 1550000000,
+            "shareholdersEquity": 10260000000,
+            "bookValuePerShare": 15.52,
+            "eps": 10.37,
+            "dividend": 5.20,
+            "workingCapital": -2020000000,
+            "totalEquity": 10260000000,
+            "retainedEarnings": 10440000000,
+            "currency": "USD"
+        },
+        "2020": {
+            "revenue": 18410000000,
+            "grossProfit": 15370000000,
+            "operatingIncome": 7850000000,
+            "netIncome": 6110000000,
+            "freeCashFlow": 6690000000,
+            "operatingCashFlow": 7530000000,
+            "capex": 840000000,
+            "totalAssets": 21010000000,
+            "totalDebt": 1500000000,
+            "cashAndEquivalents": 1850000000,
+            "shareholdersEquity": 9180000000,
+            "bookValuePerShare": 13.69,
+            "eps": 9.01,
+            "dividend": 4.55,
+            "workingCapital": -650000000,
+            "totalEquity": 9180000000,
+            "retainedEarnings": 9250000000,
+            "currency": "USD"
+        }
     },
-    "2021": {
-      "revenue": 140800000000,
-      "grossProfit": 117142000000,
-      "operatingIncome": 59217000000,
-      "netIncome": 47757000000,
-      "freeCashFlow": 48665000000,
-      "operatingCashFlow": 55000000000,
-      "capex": 6335000000,
-      "totalAssets": 194508000000,
-      "totalDebt": 26645000000,
-      "cashAndEquivalents": 17485000000,
-      "shareholdersEquity": 70746000000,
-      "bookValuePerShare": 15.52,
-      "eps": 10.40,
-      "dividend": 5.20,
-      "workingCapital": -13921000000,
-      "totalEquity": 70746000000,
-      "retainedEarnings": 72004000000,
-      "currency": "DKK"
+    "keyRatios": {
+        "profitabilityRatios": {
+            "grossMargin": 0.8465,
+            "operatingMargin": 0.4843,
+            "netMargin": 0.3451,
+            "roe": 0.8812,
+            "roa": 0.2329,
+            "roic": 0.4791
+        },
+        "liquidityRatios": {
+            "currentRatio": 0.74,
+            "quickRatio": 0.54,
+            "cashRatio": 0.17
+        },
+        "leverageRatios": {
+            "debtToEquity": 0.86,
+            "debtToAssets": 0.24,
+            "interestCoverage": 41.95,
+            "debtToEbitda": 0.76
+        },
+        "valuationRatios": {
+            "peRatio": 20.88,
+            "forwardPE": 16.67,
+            "pbRatio": 15.60,
+            "psRatio": 7.13,
+            "evToEbitda": 14.46,
+            "evToSales": 7.40,
+            "pegRatio": null,
+            "priceToFcf": 25.41
+        },
+        "efficiencyRatios": {
+            "assetTurnover": 0.77,
+            "inventoryTurnover": 1.22,
+            "receivablesTurnover": 4.84
+        },
+        "dataNote": "Ratios based on TTM data as of July 25, 2025"
     },
-    "2020": {
-      "revenue": 126946000000,
-      "grossProfit": 106014000000,
-      "operatingIncome": 54126000000,
-      "netIncome": 42138000000,
-      "freeCashFlow": 46126000000,
-      "operatingCashFlow": 51951000000,
-      "capex": 5825000000,
-      "totalAssets": 144922000000,
-      "totalDebt": 10356000000,
-      "cashAndEquivalents": 12757000000,
-      "shareholdersEquity": 63325000000,
-      "bookValuePerShare": 13.69,
-      "eps": 9.03,
-      "dividend": 4.55,
-      "workingCapital": -4464000000,
-      "totalEquity": 63325000000,
-      "retainedEarnings": 63774000000,
-      "currency": "DKK"
-    }
-  },
-
-  "keyRatios": {
-    "profitabilityRatios": {
-      "grossMargin": 0.8465,
-      "operatingMargin": 0.4843,
-      "netMargin": 0.3451,
-      "roe": 0.8811,
-      "roa": 0.2329,
-      "roic": 0.4791
+    "growthMetrics": {
+        "revenueGrowth5Y": 0.1889,
+        "epsGrowth5Y": 0.2429,
+        "fcfGrowth5Y": 0.1300,
+        "dividendGrowth5Y": 0.2100,
+        "dividendGrowthStreak": 5
     },
-    "liquidityRatios": {
-      "currentRatio": 0.74,
-      "quickRatio": 0.54,
-      "cashRatio": 0.176
-    },
-    "leverageRatios": {
-      "debtToEquity": 0.86,
-      "debtToAssets": 0.243,
-      "interestCoverage": 41.95,
-      "debtToEbitda": 0.76
-    },
-    "valuationRatios": {
-      "peRatio": 18.96,
-      "forwardPE": 15.43,
-      "pbRatio": 14.32,
-      "psRatio": 6.54,
-      "evToEbitda": 13.31,
-      "evToSales": 6.82,
-      "pegRatio": null,
-      "priceToFcf": 23.32
-    },
-    "efficiencyRatios": {
-      "assetTurnover": 0.77,
-      "inventoryTurnover": 1.22,
-      "receivablesTurnover": 4.37
-    },
-    "dataNote": "Ratios based on TTM data as of Q2 2025"
-  },
-
-  "growthMetrics": {
-    "revenueGrowth5Y": 0.189,
-    "epsGrowth5Y": 0.211,
-    "fcfGrowth5Y": 0.115,
-    "dividendGrowth5Y": 0.201,
-    "dividendGrowthStreak": 5
-  },
-
-  "dividendInfo": {
-    "currentAnnualDividend": 11.40,
-    "currentAnnualDividendUSD": 1.18,
-    "currentDividendYield": 0.0184,
-    "payoutFrequency": "Semi-Annual",
-    "payoutRatio": 0.3473,
-    "dividendGrowthRate": 0.21,
-    "consecutiveYearsOfGrowth": 5,
-    "buybackYield": 0.0061,
-    "shareholderYield": 0.0244,
-    "nextExDividendDate": "2025-08-16",
-    "nextPaymentDate": "2025-08-26",
-    "dividendPolicy": "Novo Nordisk aims to increase dividend annually in Danish kroner and targets a payout ratio of 40-60% of net profit, taking into account long-term cash flow generation and capital allocation priorities.",
-    "aristocratStatus": false,
-    "aristocratSince": null,
-    "currencyNote": "Dividends declared in DKK, converted to USD at current exchange rates for reference",
-    "recentDividendHistory": [
-      {
-        "year": 2025,
-        "quarters": [
-          {
-            "quarter": "Q3",
-            "exDate": "2025-08-16",
-            "payDate": "2025-08-26",
-            "amountDKK": null,
-            "amountUSD": null,
-            "status": "upcoming"
-          },
-          {
-            "quarter": "Q1",
-            "exDate": "2025-03-31",
-            "payDate": "2025-04-08",
-            "amountDKK": 5.65,
-            "amountUSD": 0.82,
-            "status": "paid"
-          }
+    "dividendInfo": {
+        "currentAnnualDividend": 1.18,
+        "currentAnnualDividendUSD": 1.18,
+        "currentDividendYield": 0.0166,
+        "payoutFrequency": "Semi-Annual",
+        "payoutRatio": 0.3473,
+        "dividendGrowthRate": 0.2107,
+        "consecutiveYearsOfGrowth": 5,
+        "buybackYield": 0.0061,
+        "shareholderYield": 0.0228,
+        "nextExDividendDate": "2026-03-31",
+        "nextPaymentDate": "2026-04-15",
+        "dividendPolicy": "Novo Nordisk targets a payout ratio of 30-40% of net income with consistent dividend growth",
+        "aristocratStatus": false,
+        "aristocratSince": 0,
+        "currencyNote": "Dividends originally paid in DKK, converted to USD equivalent",
+        "recentDividendHistory": [
+            {
+                "year": 2025,
+                "quarters": [
+                    {
+                        "quarter": "Q2",
+                        "exDate": "2025-03-31",
+                        "payDate": "2025-04-15",
+                        "amount": 1.18,
+                        "amountUSD": 1.18,
+                        "status": "paid"
+                    }
+                ],
+                "annualTotal": 1.18,
+                "annualTotalUSD": 1.18
+            },
+            {
+                "year": 2024,
+                "quarters": [
+                    {
+                        "quarter": "Q2",
+                        "exDate": "2024-03-31",
+                        "payDate": "2024-04-15",
+                        "amount": 0.975,
+                        "amountUSD": 0.975,
+                        "status": "paid"
+                    }
+                ],
+                "annualTotal": 0.975,
+                "annualTotalUSD": 0.975
+            }
         ],
-        "annualTotalDKK": 11.40,
-        "annualTotalUSD": 1.18
-      },
-      {
-        "year": 2024,
-        "quarters": [
-          {
-            "quarter": "Q3",
-            "exDate": "2024-08-16",
-            "payDate": "2024-08-26",
-            "amountDKK": 2.50,
-            "amountUSD": 0.36,
-            "status": "paid"
-          },
-          {
-            "quarter": "Q1",
-            "exDate": "2024-03-22",
-            "payDate": "2024-04-02",
-            "amountDKK": 4.58,
-            "amountUSD": 0.66,
-            "status": "paid"
-          }
+        "dividendGrowthAnalysis": {
+            "growthRate1Y": 0.2107,
+            "growthRate3Y": 0.1844,
+            "growthRate5Y": 0.2100,
+            "growthRate10Y": 0.1598,
+            "compoundAnnualGrowthRate": 0.2100,
+            "averageAnnualIncrease": 0.20,
+            "consecutiveIncreases": 5,
+            "lastCut": "Never",
+            "sustainabilityScore": "High"
+        },
+        "dividendMetrics": {
+            "earningsCoverage": 2.88,
+            "freeCashFlowCoverage": 2.36,
+            "debtServiceCoverage": 12.65,
+            "dividendToFcfRatio": 0.42,
+            "retentionRatio": 0.65,
+            "sustainableDividendGrowth": 0.57,
+            "impliedGrowthRate": 0.21
+        },
+        "peerComparison": {
+            "industryAverageDividendYield": 0.025,
+            "industryAveragePayoutRatio": 0.45,
+            "industryAverageGrowthRate": 0.05,
+            "relativeYieldRanking": "Below",
+            "relativeGrowthRanking": "Above",
+            "reliabilityRanking": "Excellent"
+        }
+    },
+    "industryBenchmarks": {
+        "averagePE": 22.0,
+        "averagePB": 4.2,
+        "averageROE": 0.18,
+        "averageDebtToEquity": 0.65,
+        "averageRevGrowth": 0.08,
+        "averageDividendYield": 0.025
+    },
+    "assumptions": {
+        "terminalGrowthRate": 0.025,
+        "growthPeriodYears": 10,
+        "fadeYears": 5,
+        "taxRate": 0.21,
+        "reinvestmentRate": 0.35,
+        "dividendGrowthRate": 0.08,
+        "perpetualGrowthRate": 0.025,
+        "dividendAssumptions": {
+            "targetPayoutRatio": 0.35,
+            "minimumPayoutRatio": 0.30,
+            "maximumPayoutRatio": 0.40,
+            "expectedDividendGrowth": 0.08,
+            "conservativeDividendGrowth": 0.05,
+            "optimisticDividendGrowth": 0.12,
+            "sustainabilityThreshold": 0.60,
+            "cyclicalAdjustment": false,
+            "variableDividendPolicy": false,
+            "shareRepurchasePriority": "Secondary to dividend",
+            "specialDividendPotential": false,
+            "currencyHedging": true,
+            "currencyNote": "Company hedges currency exposure for USD dividend payments from DKK earnings"
+        }
+    },
+    "businessSegments": {
+        "diabetesAndObesityCare": {
+            "revenue": 41440000000,
+            "operatingIncome": 19540000000,
+            "description": "Diabetes and obesity treatment products including Ozempic, Wegovy, and insulin products",
+            "growthRate": 0.26,
+            "marketPosition": "Global market leader in GLP-1 treatments with 62% market share"
+        },
+        "rareDisease": {
+            "revenue": 2740000000,
+            "operatingIncome": 78000000,
+            "description": "Rare blood disorders and endocrine treatments including hemophilia and growth hormone therapies",
+            "growthRate": 0.11,
+            "marketPosition": "Specialized niche player in rare disease treatments"
+        }
+    },
+    "geographicRevenue": {
+        "northAmerica": {
+            "revenue": 26570000000,
+            "percentage": 0.605,
+            "growthRate": 0.25,
+            "description": "United States and Canada markets, primary growth driver for obesity treatments"
+        },
+        "international": {
+            "revenue": 17380000000,
+            "percentage": 0.395,
+            "growthRate": 0.23,
+            "description": "Europe, Asia-Pacific, and other international markets with strong diabetes franchise"
+        }
+    },
+    "competitivePosition": {
+        "marketLeadership": "Global leader in diabetes care and dominant player in GLP-1 obesity treatments",
+        "keyProducts": [
+            "Ozempic (semaglutide injection)",
+            "Wegovy (semaglutide for obesity)",
+            "Rybelsus (oral semaglutide)",
+            "NovoLog/NovoRapid (insulin aspart)",
+            "Levemir (insulin detemir)",
+            "Victoza (liraglutide)"
         ],
-        "annualTotalDKK": 11.40,
-        "annualTotalUSD": 1.02
-      },
-      {
-        "year": 2023,
-        "quarters": [
-          {
-            "quarter": "Q3",
-            "exDate": "2023-08-18",
-            "payDate": "2023-08-29",
-            "amountDKK": 2.15,
-            "amountUSD": 0.31,
-            "status": "paid"
-          },
-          {
-            "quarter": "Q1",
-            "exDate": "2023-03-24",
-            "payDate": "2023-04-04",
-            "amountDKK": 2.92,
-            "amountUSD": 0.42,
-            "status": "paid"
-          }
+        "competitiveAdvantages": [
+            "First-mover advantage in GLP-1 treatments",
+            "Strong R&D pipeline with next-generation treatments",
+            "Global manufacturing and distribution network",
+            "Established relationships with healthcare providers",
+            "Strong brand recognition in diabetes care",
+            "Significant barriers to entry in biologics manufacturing"
         ],
-        "annualTotalDKK": 9.40,
-        "annualTotalUSD": 0.73
-      }
-    ],
-    "dividendGrowthAnalysis": {
-      "growthRate1Y": 0.2128,
-      "growthRate3Y": 0.242,
-      "growthRate5Y": 0.201,
-      "growthRate10Y": 0.152,
-      "compoundAnnualGrowthRate": 0.205,
-      "averageAnnualIncrease": 1.85,
-      "consecutiveIncreases": 5,
-      "lastCut": "2016 (due to currency effects)",
-      "sustainabilityScore": "High"
-    },
-    "dividendMetrics": {
-      "earningsCoverage": 2.88,
-      "freeCashFlowCoverage": 2.06,
-      "debtServiceCoverage": 35.2,
-      "dividendToFcfRatio": 0.485,
-      "retentionRatio": 0.653,
-      "sustainableDividendGrowth": 0.185,
-      "impliedGrowthRate": 0.195
-    },
-    "peerComparison": {
-      "industryAverageDividendYield": 0.022,
-      "industryAveragePayoutRatio": 0.42,
-      "industryAverageGrowthRate": 0.085,
-      "relativeYieldRanking": "Below Average",
-      "relativeGrowthRanking": "Excellent",
-      "reliabilityRanking": "Very Good"
+        "risks": [
+            "Increasing competition from Eli Lilly and other pharmaceutical companies",
+            "Patent expiration risks for key products",
+            "Regulatory pricing pressures in major markets",
+            "Supply chain constraints limiting growth potential",
+            "Currency exposure from international operations",
+            "Potential safety or efficacy concerns with GLP-1 treatments"
+        ]
     }
-  },
-
-  "industryBenchmarks": {
-    "averagePE": 25.2,
-    "averagePB": 4.8,
-    "averageROE": 0.18,
-    "averageDebtToEquity": 0.65,
-    "averageRevGrowth": 0.08,
-    "averageDividendYield": 0.022
-  },
-
-  "assumptions": {
-    "terminalGrowthRate": 0.025,
-    "growthPeriodYears": 10,
-    "fadeYears": 5,
-    "taxRate": 0.209,
-    "reinvestmentRate": 0.45,
-    "dividendGrowthRate": 0.06,
-    "perpetualGrowthRate": 0.025,
-    "dividendAssumptions": {
-      "targetPayoutRatio": 0.50,
-      "minimumPayoutRatio": 0.40,
-      "maximumPayoutRatio": 0.60,
-      "expectedDividendGrowth": 0.06,
-      "conservativeDividendGrowth": 0.08,
-      "optimisticDividendGrowth": 0.20,
-      "sustainabilityThreshold": 0.70,
-      "cyclicalAdjustment": false,
-      "variableDividendPolicy": false,
-      "shareRepurchasePriority": "Balanced with dividend",
-      "specialDividendPotential": false,
-      "currencyHedging": true,
-      "currencyNote": "Dividends paid in DKK, subject to currency exchange rate fluctuations for USD investors"
-    }
-  },
-
-  "businessSegments": {
-    "diabetesAndObesityCare": {
-      "revenue": 284270000000,
-      "operatingIncome": 134750000000,
-      "description": "Diabetes care products including insulin and GLP-1 treatments, plus obesity treatments like Wegovy",
-      "growthRate": 0.2631,
-      "marketPosition": "Global leader in diabetes care and emerging leader in obesity treatment"
-    },
-    "rareDisease": {
-      "revenue": 18870000000,
-      "operatingIncome": 536000000,
-      "description": "Treatments for rare blood disorders and rare endocrine diseases",
-      "growthRate": 0.1121,
-      "marketPosition": "Established player with specialized treatments"
-    }
-  },
-
-  "geographicRevenue": {
-    "northAmerica": {
-      "revenue": 183210000000,
-      "percentage": 0.604,
-      "growthRate": 0.2496,
-      "description": "United States and Canada - largest market driven by GLP-1 demand"
-    },
-    "international": {
-      "revenue": 119930000000,
-      "percentage": 0.396,
-      "growthRate": 0.2284,
-      "description": "Europe, Asia-Pacific, and other international markets"
-    }
-  },
-
-  "competitivePosition": {
-    "marketLeadership": "Global leader in diabetes care, emerging leader in obesity treatment",
-    "keyProducts": ["Ozempic", "Wegovy", "Rybelsus", "Tresiba", "Levemir", "NovoRapid"],
-    "competitiveAdvantages": [
-      "Strong R&D pipeline in GLP-1 and diabetes treatments",
-      "Global manufacturing and distribution network",
-      "Strong regulatory expertise and track record",
-      "Leading position in fast-growing obesity treatment market"
-    ],
-    "risks": [
-      "Patent cliff risks for older diabetes products",
-      "Intense competition in GLP-1 space from Eli Lilly",
-      "Pricing pressure from healthcare systems",
-      "Regulatory scrutiny on drug pricing",
-      "Currency exposure for global operations"
-    ]
-  }
 }

@@ -53,6 +53,19 @@ cd python
 python src/calculate.py --help
 ```
 
+### Quick Start
+
+```bash
+# Calculate Caterpillar (CAT) valuation
+python src/calculate.py CAT
+
+# Calculate Apple (AAPL) and save to file 
+python src/calculate.py AAPL --save
+
+# List all available companies
+python src/calculate.py --list
+```
+
 ### Calculate Company Value
 ```bash
 # Calculate using pre-loaded company data (default: CAT)
@@ -110,13 +123,19 @@ Confidence Level:  High
 .
 ├── python/                          # Python implementation
 │   ├── src/
-│   │   ├── valuation_calculator.py  # Core calculation engine
-│   │   └── calculate.py             # Command-line interface
+│   │   ├── calculate.py             # Command-line interface  
+│   │   ├── valuation_calculator_modular.py  # Main orchestrator
+│   │   ├── data/                    # Data processing modules
+│   │   ├── models/                  # Data models
+│   │   ├── valuation/               # Valuation methods
+│   │   ├── risk/                    # Risk analysis
+│   │   ├── utils/                   # Utility functions
+│   │   └── output/                  # Output formatting
 │   ├── tests/
 │   │   └── test_valuation_calculator.py  # Unit tests
 │   └── README.md                    # Detailed Python documentation
 ├── data/                            # Company financial data
-│   ├── cat.json                     # Caterpillar example
+│   ├── nvo.json                     # Novo Nordisk example
 │   ├── template.json                # Data structure template
 │   └── [ticker].json                # Additional companies
 └── README.md                        # This file

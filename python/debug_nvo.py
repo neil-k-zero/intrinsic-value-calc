@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Debug script to compare NVO data between original and modular implementations.
+Debug script to analyze NVO data using the modular implementation.
 """
 
 import json
@@ -10,9 +10,9 @@ from pathlib import Path
 # Add the src directory to Python path
 sys.path.append(str(Path(__file__).parent / 'src'))
 
-from valuation_calculator import ValuationCalculator as OriginalCalculator
 from data.data_loader import DataLoader
 from data.currency_converter import CurrencyConverter
+from valuation_calculator_modular import ValuationCalculator
 
 def main():
     # Load raw NVO data
@@ -30,42 +30,41 @@ def main():
     print(f"Original TTM Revenue (DKK): {ttm_data['revenue']:,}")
     print(f"Original TTM Net Income (DKK): {ttm_data['netIncome']:,}")
     
-    # Convert using original method
-    print("\n=== ORIGINAL CALCULATOR CONVERSION ===")
-    original_calc = OriginalCalculator(raw_data)
-    original_normalized = original_calc.normalized_data
-    original_ttm = original_normalized['financialHistory']['TTM']
-    print(f"Original converted TTM FCF (USD): {original_ttm['freeCashFlow']:,.2f}")
-    print(f"Original converted TTM Revenue (USD): {original_ttm['revenue']:,.2f}")
-    print(f"Original converted TTM Net Income (USD): {original_ttm['netIncome']:,.2f}")
+    # Load and convert using modular system
+    print("\n=== MODULAR SYSTEM ANALYSIS ===")
+    data_loader = DataLoader(Path(__file__).parent.parent / 'data')
+    company_data = data_loader.load_company_data('NVO')
     
-    # Convert using modular method
-    print("\n=== MODULAR CONVERTER ===")
+    # Check modular conversion
+    ttm_usd = company_data.financial_history['TTM']
+    print(f"Modular converted TTM FCF (USD): {ttm_usd.free_cash_flow:,.2f}")
+    print(f"Modular converted TTM Revenue (USD): {ttm_usd.revenue:,.2f}")
+    print(f"Modular converted TTM Net Income (USD): {ttm_usd.net_income:,.2f}")
+    
+    # Check modular currency conversion directly
+    print("\n=== DIRECT CURRENCY CONVERTER ===")
     modular_normalized = CurrencyConverter.convert_to_usd(raw_data)
     modular_ttm = modular_normalized['financialHistory']['TTM']
-    print(f"Modular converted TTM FCF (USD): {modular_ttm['freeCashFlow']:,.2f}")
-    print(f"Modular converted TTM Revenue (USD): {modular_ttm['revenue']:,.2f}")
-    print(f"Modular converted TTM Net Income (USD): {modular_ttm['netIncome']:,.2f}")
+    print(f"Direct converted TTM FCF (USD): {modular_ttm['freeCashFlow']:,.2f}")
+    print(f"Direct converted TTM Revenue (USD): {modular_ttm['revenue']:,.2f}")
+    print(f"Direct converted TTM Net Income (USD): {modular_ttm['netIncome']:,.2f}")
     
-    # Check for differences
-    print("\n=== DIFFERENCES ===")
-    fcf_diff = original_ttm['freeCashFlow'] - modular_ttm['freeCashFlow']
-    print(f"FCF Difference: {fcf_diff:,.2f}")
-    
-    # Check historical data
+    # Check historical data for growth calculation
     print("\n=== HISTORICAL FCF FOR GROWTH CALCULATION ===")
     years = ['2020', '2021', '2022', '2023', '2024', 'TTM']
-    print("Original FCF history (USD):")
+    print("Modular FCF history (USD):")
     for year in years:
-        if year in original_normalized['financialHistory']:
-            fcf = original_normalized['financialHistory'][year]['freeCashFlow']
-            print(f"  {year}: {fcf:,.2f}")
+        if year in company_data.financial_history:
+            year_data = company_data.financial_history[year]
+            print(f"  {year}: {year_data.free_cash_flow:,.2f}")
     
-    print("\nModular FCF history (USD):")
-    for year in years:
-        if year in modular_normalized['financialHistory']:
-            fcf = modular_normalized['financialHistory'][year]['freeCashFlow']
-            print(f"  {year}: {fcf:,.2f}")
+    # Run full valuation to see results
+    print("\n=== FULL VALUATION RESULTS ===")
+    calculator = ValuationCalculator(company_data)
+    results = calculator.calculate_intrinsic_value()
+    print(f"Intrinsic Value: ${results['intrinsicValue']:.2f}")
+    print(f"Current Price: ${results['currentPrice']:.2f}")
+    print(f"Upside: {results['upside']:.1f}%")
 
 if __name__ == "__main__":
     main()
