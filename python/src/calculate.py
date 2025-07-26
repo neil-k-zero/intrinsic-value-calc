@@ -39,11 +39,18 @@ Examples:
                        help='Save results to output file')
     parser.add_argument('--output-dir', default='../output',
                        help='Output directory for saved results')
+    parser.add_argument('--raw-assumptions', action='store_true',
+                       help='Use original data assumptions (disable standardization)')
+    parser.add_argument('--generate-report', action='store_true',
+                       help='Generate standardization framework report')
     
     args = parser.parse_args()
     
+    # Determine whether to use standardized assumptions
+    use_standardized_assumptions = not args.raw_assumptions
+    
     # Initialize data loader
-    data_loader = DataLoader(DataLoader.get_default_data_directory())
+    data_loader = DataLoader(DataLoader.get_default_data_directory(), use_standardized_assumptions)
     
     if args.list:
         companies = data_loader.list_available_companies()
@@ -54,8 +61,31 @@ Examples:
         ticker = args.ticker.upper()
         CLIPrinter.print_loading_message(ticker)
         
+        # Print standardization status
+        if use_standardized_assumptions:
+            print("🎯 Using Standardized Assumption Framework for consistent valuations")
+        else:
+            print("📊 Using original data assumptions (raw mode)")
+        
         # Load and validate company data
         company_data = data_loader.load_company_data(ticker)
+        
+        # Generate standardization report if requested
+        if args.generate_report and use_standardized_assumptions:
+            from data.standardized_assumptions import create_standardized_framework
+            framework = create_standardized_framework()
+            report = framework.generate_assumption_report(company_data.raw_data)
+            
+            output_dir = Path(__file__).parent / args.output_dir
+            output_dir.mkdir(exist_ok=True)
+            
+            date_str = datetime.now().strftime('%Y-%m-%d')
+            report_path = output_dir / f'{ticker.lower()}_assumptions_report_{date_str}.txt'
+            
+            with open(report_path, 'w') as f:
+                f.write(report)
+            
+            print(f"📊 Standardization report saved to: {report_path}")
         
         # Calculate intrinsic value using modular calculator
         calculator = ValuationCalculator(company_data)

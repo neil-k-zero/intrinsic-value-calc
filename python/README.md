@@ -1,8 +1,16 @@
 # Company Value Calculator - Python Implementation
 
-A comprehensive intrinsic value calculator that implements multiple professional valuation methodologies with industry-specific weighting to determine the fair value of publicly traded companies.
+A comprehensive intrinsic value calculator that implements multiple professional valuation methodologies with industry-specific weighting and **standardized assumption framework** to determine the fair value of publicly traded companies.
 
 ## Features
+
+### 🎯 NEW: Standardized Assumption Framework
+- **Consistent Valuations**: Ensures the same company produces identical results regardless of data source
+- **Evidence-Based Assumptions**: All assumptions derived from objective sources (Federal Reserve, Damodaran, IMF)
+- **Conservative Bias**: Systematic 10% reduction on growth assumptions to protect against overvaluation
+- **Industry-Specific Benchmarks**: Sector-appropriate multiples and risk premiums from ETF data
+- **Transparent Methodology**: Complete documentation of assumption sources and calculations
+- **Quality Control**: Data quality scoring and validation with recommendations
 
 ### Valuation Methods
 - **Discounted Cash Flow (DCF)**
@@ -31,6 +39,7 @@ A comprehensive intrinsic value calculator that implements multiple professional
   - **Financials**: DDM-focused (40%) with book value emphasis (25%), excludes FCF models
   - **Energy**: Normalized cash flow approach (45%) with reserves-based NAV (20%)
   - **Healthcare**: Balanced growth and stability approach
+- **Standardized Assumptions**: Objective, evidence-based assumptions that ensure consistent results
 - **Dynamic Adjustments**: Company-specific modifications for:
   - Non-dividend paying companies
   - High-growth characteristics (Beta > 1.5)
@@ -64,8 +73,14 @@ python src/calculate.py --help
 ### Command Line Interface
 
 ```bash
-# Calculate valuation for a specific company (default: CAT)
-python src/calculate.py CAT
+# Calculate valuation with standardized assumptions (default, recommended)
+python src/calculate.py NVO
+
+# Calculate valuation with original data assumptions
+python src/calculate.py NVO --raw-assumptions
+
+# Generate standardization framework report
+python src/calculate.py NVO --generate-report
 
 # List all available companies
 python src/calculate.py --list
@@ -77,15 +92,39 @@ python src/calculate.py AAPL --save
 python src/calculate.py --help
 ```
 
+### Standardization Framework Options
+
+**Default Mode (Recommended)**: Uses standardized, evidence-based assumptions
+```bash
+python src/calculate.py NVO
+# 🎯 Uses Standardized Assumption Framework for consistent valuations
+```
+
+**Raw Mode**: Uses original data file assumptions
+```bash
+python src/calculate.py NVO --raw-assumptions  
+# 📊 Uses original data assumptions (raw mode)
+```
+
+**Report Generation**: Creates detailed assumption documentation
+```bash
+python src/calculate.py NVO --generate-report
+# 📊 Standardization report saved to: output/nvo_assumptions_report_2025-07-26.txt
+```
+
 ### Programmatic Usage
 
 ```python
 from src.data.data_loader import DataLoader
 from src.valuation_calculator_modular import ValuationCalculator
 
-# Load company data using the modular data loader
-data_loader = DataLoader()
-company_data = data_loader.load_company_data('CAT')
+# Load company data with standardized assumptions (default)
+data_loader = DataLoader(use_standardized_assumptions=True)
+company_data = data_loader.load_company_data('NVO')
+
+# Load company data with original assumptions
+data_loader = DataLoader(use_standardized_assumptions=False)
+company_data = data_loader.load_company_data('NVO')
 
 # Create calculator instance
 calculator = ValuationCalculator(company_data)

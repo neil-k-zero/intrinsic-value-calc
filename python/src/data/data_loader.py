@@ -7,11 +7,13 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Dict, Any
+import logging
 
 # Import using absolute imports that work when run as script
 try:
     from models.company_data import CompanyData
     from data.currency_converter import CurrencyConverter
+    from data.standardized_assumptions import create_standardized_framework
 except ImportError:
     # Fallback for when running as standalone script
     import sys
@@ -19,19 +21,32 @@ except ImportError:
 from models.company_data import CompanyData
 from data.data_validator import DataValidator
 from data.currency_converter import CurrencyConverter
+from data.standardized_assumptions import create_standardized_framework
+
+logger = logging.getLogger(__name__)
 class DataLoader:
     """
     Handles loading and initial processing of company data files.
     """
     
-    def __init__(self, data_directory: Path):
+    def __init__(self, data_directory: Path, use_standardized_assumptions: bool = True):
         """
         Initialize DataLoader with data directory path.
         
         Args:
             data_directory: Path to directory containing company data files
+            use_standardized_assumptions: Whether to apply standardized assumption framework
         """
         self.data_directory = data_directory
+        self.use_standardized_assumptions = use_standardized_assumptions
+        
+        # Initialize standardization framework if enabled
+        if self.use_standardized_assumptions:
+            self.standardization_framework = create_standardized_framework()
+            logger.info("🎯 DataLoader initialized with standardized assumption framework")
+        else:
+            self.standardization_framework = None
+            logger.info("📊 DataLoader initialized without standardization (raw data mode)")
     
     def load_company_data(self, ticker: str) -> CompanyData:
         """
@@ -41,7 +56,7 @@ class DataLoader:
             ticker: Company ticker symbol
             
         Returns:
-            CompanyData object with normalized data
+            CompanyData object with normalized data and standardized assumptions
             
         Raises:
             FileNotFoundError: If company data file doesn't exist
@@ -61,6 +76,13 @@ class DataLoader:
         
         # Convert currency if needed
         normalized_data = CurrencyConverter.convert_to_usd(raw_data)
+        
+        # Apply standardized assumptions if enabled
+        if self.use_standardized_assumptions and self.standardization_framework:
+            logger.info(f"🎯 Applying standardized assumptions to {ticker}")
+            normalized_data = self.standardization_framework.apply_standardized_assumptions(normalized_data)
+        else:
+            logger.info(f"📊 Loading {ticker} with original assumptions")
         
         # Create and return CompanyData object
         return CompanyData.from_dict(normalized_data)
